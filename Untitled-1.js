@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"Untitled_1_atlas_", frames: [[0,0,1365,938],[0,940,1020,867],[1022,940,1020,867]]},
+		{name:"Untitled_1_atlas_", frames: [[0,0,1365,938],[1022,940,1020,867],[0,940,1020,867]]},
 		{name:"Untitled_1_atlas_2", frames: [[1022,422,1020,403],[818,869,140,83],[818,954,135,77],[1022,0,1020,420],[359,1141,379,69],[0,0,1020,867],[359,1229,1020,59],[0,869,357,525],[1022,827,1020,400],[359,869,457,144],[359,1290,586,18],[1381,1229,284,89],[359,1015,438,124],[960,926,54,54],[881,1033,78,28],[960,869,57,55],[799,1033,80,46]]}
 ];
 
@@ -62,15 +62,15 @@ lib.ssMetadata = [
 
 
 (lib.Layer2 = function() {
-	this.initialize(ss["Untitled_1_atlas_"]);
-	this.gotoAndStop(2);
+	this.initialize(ss["Untitled_1_atlas_2"]);
+	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.Layer3 = function() {
-	this.initialize(ss["Untitled_1_atlas_2"]);
-	this.gotoAndStop(5);
+	this.initialize(ss["Untitled_1_atlas_"]);
+	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
@@ -611,13 +611,13 @@ p.nominalBounds = new cjs.Rectangle(-25.7,-40.3,545.9000000000001,420.4000000000
 	// Asset_1_4x
 	this.instance = new lib.Symbol1();
 	this.instance.parent = this;
-	this.instance.setTransform(273.2,681.8,1,1,0,0,0,247.2,169.8);
+	this.instance.setTransform(274.8,681.8,1,1,0,0,0,247.2,169.8);
 
 	this.instance_1 = new lib.Asset14x();
 	this.instance_1.parent = this;
 	this.instance_1.setTransform(0,464);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.instance}]}).to({state:[{t:this.instance_1},{t:this.instance}]},71).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.instance,p:{x:274.8}}]}).to({state:[{t:this.instance_1},{t:this.instance,p:{x:273.2}}]},71).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
 
