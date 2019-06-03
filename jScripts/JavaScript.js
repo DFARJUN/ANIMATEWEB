@@ -1,7 +1,16 @@
 ﻿var hwind = window.innerHeight;
 var wwind = window.innerWidth;
 document.documentElement.style.setProperty('--hwwind', hwind + "px");
-document.documentElement.style.setProperty('--wwwind', wwind + "px");
+document.documentElement.style.setProperty('--wwwind', wwind-17 + "px");
+
+
+////window.onresize = function () {
+//    var hwind = window.innerHeight;
+//    var wwind = window.innerWidth;
+//    document.documentElement.style.setProperty('--hwwind', hwind + "px");
+//    document.documentElement.style.setProperty('--wwwind', wwind - 17 + "px");
+//}
+
 
 function hideload() {
     document.getElementById("opennigsec").style.display = "none";
