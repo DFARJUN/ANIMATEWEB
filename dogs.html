@@ -1,159 +1,174 @@
-﻿<!doctype html>
+﻿<!DOCTYPE html>
 <html lang="">
-<head>
+  <head>
     <meta charset="utf-8" />
     <title></title>
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <meta name="author" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
 
     <!-- CSS -->
     <link href="bootstrap/css/bootstrap-reboot.css" rel="stylesheet" />
     <link href="bootstrap/css/bootstrap-grid.css" rel="stylesheet" />
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
     <link href="styles/myStyle.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Heebo:400,700|Varela+Round&display=swap&subset=hebrew" rel="stylesheet">
-    <link href='http://serve.fontsproject.com/css?family=Nehama:400'
-          rel='stylesheet' type='text/css'>
+    <link
+      href="https://fonts.googleapis.com/css?family=Heebo:400,700|Varela+Round&display=swap&subset=hebrew"
+      rel="stylesheet"
+    />
+    <link
+      href="http://serve.fontsproject.com/css?family=Nehama:400"
+      rel="stylesheet"
+      type="text/css"
+    />
 
     <!-- Scripts -->
     <script src="jScripts/jquery-1.12.0.min.js"></script>
     <script src="bootstrap/js/bootstrap.js"></script>
     <script src="jScripts/JavaScript.js"></script>
-
-</head>
-<body>
+  </head>
+  <body>
     <div id="container" class="container">
+      <header>
+        <nav>
+          <ul>
+            <li><a id="logo" href="index.html"></a></li>
+            <li>
+              ראש וגרון
+              <ul>
+                <li id="here"><a href="shiul.html">שיעול</a></li>
+                <li><a href="#">צינון</a></li>
+                <li><a href="#">כאב גרון</a></li>
+                <li><a href="#">כאב ראש</a></li>
+                <li><a href="#">כאב אוזניים</a></li>
+              </ul>
+            </li>
+            <li>
+              בטן גב
+              <ul>
+                <li><a href="stomach.html">כאב בטן</a></li>
+                <li><a href="#">כאב גב</a></li>
+                <li><a href="#">עצירות</a></li>
+                <li><a href="#">שלשולים</a></li>
+              </ul>
+            </li>
+            <li>
+              ענייני בנות
+              <ul>
+                <li><a href="period.html">כאב מחזור</a></li>
+                <li><a href="#">דלקת בשתן</a></li>
+              </ul>
+            </li>
+            <li>
+              עור ושרירים
+              <ul>
+                <li><a href="#">כאב שרירים</a></li>
+                <li><a href="#">אלרגיות עור</a></li>
+                <li><a href="#">פצעי עור</a></li>
+                <li><a href="#">שריטות וחתכים</a></li>
+              </ul>
+            </li>
+            <li>
+              בעלי חיים
+              <ul>
+                <li><a href="dogs.html">פרעושים ופשפשים</a></li>
+                <li><a href="#">ריח רע מהפה</a></li>
+                <li><a href="#">נשירת פרווה</a></li>
+              </ul>
+            </li>
+            <li>
+              על סבתא
+              <ul>
+                <li><a href="#">מאחורי סבתא</a></li>
+                <li><a href="#">דברו איתה</a></li>
+                <li><a href="#">המפה של סבתא</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <article>
         <header>
-            <nav>
-                <ul>
-                    <li><a id="logo" href="index.html"></a></li>
-                    <li>
-                        ראש וגרון
-                        <ul>
-                            <li id="here"><a href="shiul.html">שיעול</a></li>
-                            <li><a href="#">צינון</a></li>
-                            <li><a href="#">כאב גרון</a></li>
-                            <li><a href="#">כאב ראש</a></li>
-                            <li><a href="#">כאב אוזניים</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        בטן גב
-                        <ul>
-                            <li><a href="stomach.html">כאב בטן</a></li>
-                            <li><a href="#">כאב גב</a></li>
-                            <li><a href="#">עצירות</a></li>
-                            <li><a href="#">שלשולים</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        ענייני בנות
-                        <ul>
-                            <li><a href="period.html">כאב מחזור</a></li>
-                            <li><a href="#">דלקת בשתן</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        עור ושרירים
-                        <ul>
-                            <li><a href="#">כאב שרירים</a></li>
-                            <li><a href="#">אלרגיות עור</a></li>
-                            <li><a href="#">פצעי עור</a></li>
-                            <li><a href="#">שריטות וחתכים</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        בעלי חיים
-                        <ul>
-                            <li><a href="dogs.html">פרעושים ופשפשים</a></li>
-                            <li><a href="#">ריח רע מהפה</a></li>
-                            <li><a href="#">נשירת פרווה</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        על סבתא
-                        <ul>
-                            <li><a href="#">מאחורי סבתא</a></li>
-                            <li><a href="#">דברו איתה</a></li>
-                            <li><a href="#">המפה של סבתא</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
+          <div class="headertxt">
+            <h1>פרעושים וקרציות</h1>
+            <p>
+              סבתא אוהבת בעלי חיים, מאז ומתמיד היו לה כלבים בבית! אחרי ניסיון של
+              שנים סבתא אספה בשבילך טיפים כיצד לחיות בשלום עם הבעיות המוכרות של
+              החברים הכי טובים שלנו!
+            </p>
+          </div>
+          <div id="dogphoto"></div>
         </header>
-        <article>
-            <header>
-                <div class="headertxt">
-                    <h1>פרעושים וקרציות</h1>
-                    <p>
-                        סבתא אוהבת בעלי חיים, מאז ומתמיד היו לה כלבים בבית!
-                        אחרי ניסיון של שנים סבתא אספה בשבילך טיפים כיצד לחיות בשלום עם הבעיות המוכרות של החברים הכי טובים שלנו!
-                    </p>
-                </div>
-                <div id="dogphoto"></div>
-            </header>
-            <section class="whitesec" id="bottle2">
-                <div class="blueback">
-                    <div class="medicen">
-                        <h2>החבר המתגרד של סבתא:</h2>
-                        <h3>מה סבתא שמה:</h3>
-                        <p>שמן צמחי (שמן זית, קנולה, הכל הולך אצלה!)</p>
-                        <h3>מה סבתא עושה ?</h3>
-                        <p>
-                            סבתא יודעת שהדרך הטובה ביותר להסיר קרציות ופרעושים היה הדרך הישנה והטובה בעזרת האצבעות ובעזרת פינצטה.
-                            סבתא מצאה שלקרציות עקשניות יותר, מטבילים את הפרווה בשמן צמחי על מנת להחליק את החבר המתגרד בקלות.
-                        </p>
-                    </div>
-                    <div class="tip tip1">
-                        <h3>טיפ מסבתא:</h3>
-                        <p>תדאגו לייבש את הפרווה טוב טוב, פרווה רטובה היא בית לקרציות.</p>
-                    </div>
-                </div>
-            </section>
-            <section class="whitesec">
-                <div class="blueback">
-                    <div class="medicen">
-                        <h2>שום שסבתא קלפה עכשיו: </h2>
-                        <h3>מה סבתא שמה ?</h3>
-                        <p>שן שום או כף חומץ</p>
-                        <h3>איך היא עושה את זה? </h3>
-                        <p>
-                            פעמיים בשבוע סבתא שמה באוכל של הכלב חתיכת שום מרוסק או שסבתא חותכת את השום לחתיכות קטנות וישר מכניסה זאת לפה של כלבה הנאמן.
-                            לפעמים גם סבתא שמה חומץ תפוחים בקערת המים.
-                        </p>
-                    </div>
-                    <div class="tip tip2">
-                        <h3>טיפ מסבתא:</h3>
-                        <p>
-                            שעתיים אחרי השום אל תיתן לכלב ללקק אותך, אומנם טיפלנו בפרעושים אך לא בריח הרע מהפה.
-                        </p>
-                    </div>
-                </div>
-            </section>
-            <section class="whitesec">
-                <div class="blueback">
-                    <div class="medicen">
-                        <h2>סבתא מקדימה תרופה למכה</h2>
-                        <h3>מה סבתא שמה?</h3>
-                        <p> מים, לימון וענף רוזמרין (או כף רוזמרין יבש)</p>
-                        <h3>איך היא עושה את זה?</h3>
-                        <p>
-                            לוקחת שלושת רבע ליטר מים רותחים ושופכת על לימון חתוך דק, מוסיפה את הרוזמרין ונותנת לזה לנוח.
-                            לאחר כמה שעות שזה מצטנן סבתא לוקחת את המים מסננת ושמה בבקבוק ספריי.
-                            מידי פעם סבתא מרססת את כלבה האהוב וכך דואגת להרחיק ממנו צרות בצורת פרעושים וקרציות.
-                        </p>
-                    </div>
-                    <div class="tip tip3">
-                        <h3>טיפ מסבתא:  </h3>
-                        <p>
-                            היא יודעת כמה אתם אוהבים את הכלב, אבל תוותרו על לחבק אותו ישר אחרי הריסוס.
-                        </p>
-                    </div>
-                </div>
-            </section>
-        </article>
+        <section class="whitesec" id="bottle2">
+          <div class="blueback">
+            <div class="medicen">
+              <h2>החבר המתגרד של סבתא:</h2>
+              <h3>מה סבתא שמה:</h3>
+              <p>שמן צמחי (שמן זית, קנולה, הכל הולך אצלה!)</p>
+              <h3>מה סבתא עושה ?</h3>
+              <p>
+                סבתא יודעת שהדרך הטובה ביותר להסיר קרציות ופרעושים היה הדרך
+                הישנה והטובה בעזרת האצבעות ובעזרת פינצטה. סבתא מצאה שלקרציות
+                עקשניות יותר, מטבילים את הפרווה בשמן צמחי על מנת להחליק את החבר
+                המתגרד בקלות.
+              </p> 
+            </div>
+            <div class="tip tip1">
+              <h3>טיפ מסבתא:</h3>
+              <p>תדאגו לייבש את הפרווה טוב טוב, פרווה רטובה היא בית לקרציות.</p>
+            </div>
+          </div>
+        </section>
+        <section class="whitesec">
+          <div class="blueback">
+            <div class="medicen">
+              <h2>שום שסבתא קלפה עכשיו:</h2>
+              <h3>מה סבתא שמה ?</h3>
+              <p>שן שום או כף חומץ</p>
+              <h3>איך היא עושה את זה?</h3>
+              <p>
+                פעמיים בשבוע סבתא שמה באוכל של הכלב חתיכת שום מרוסק או שסבתא
+                חותכת את השום לחתיכות קטנות וישר מכניסה זאת לפה של כלבה הנאמן.
+                לפעמים גם סבתא שמה חומץ תפוחים בקערת המים.
+              </p>
+            </div>
+            <div class="tip tip2">
+              <h3>טיפ מסבתא:</h3>
+              <p>
+                שעתיים אחרי השום אל תיתן לכלב ללקק אותך, אומנם טיפלנו בפרעושים
+                אך לא בריח הרע מהפה.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="whitesec">
+          <div class="blueback">
+            <div class="medicen">
+              <h2>סבתא מקדימה תרופה למכה</h2>
+              <h3>מה סבתא שמה?</h3>
+              <p>מים, לימון וענף רוזמרין (או כף רוזמרין יבש)</p>
+              <h3>איך היא עושה את זה?</h3>
+              <p>
+                לוקחת שלושת רבע ליטר מים רותחים ושופכת על לימון חתוך דק, מוסיפה
+                את הרוזמרין ונותנת לזה לנוח. לאחר כמה שעות שזה מצטנן סבתא לוקחת
+                את המים מסננת ושמה בבקבוק ספריי. מידי פעם סבתא מרססת את כלבה
+                האהוב וכך דואגת להרחיק ממנו צרות בצורת פרעושים וקרציות.
+              </p>
+            </div>
+            <div class="tip tip3">
+              <h3>טיפ מסבתא:</h3>
+              <p>
+                היא יודעת כמה אתם אוהבים את הכלב, אבל תוותרו על לחבק אותו ישר
+                אחרי הריסוס.
+              </p>
+            </div>
+          </div>
+        </section>
+      </article>
     </div>
-</body>
+  </body>
 </html>
