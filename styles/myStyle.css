@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'nehama-webfont';
+    src: url('../font/nehama-webfont-webfont.woff') format('woff');
+}
+@font-face {
+    font-family: 'nehama-webfont';
+    src: url('../font/nehama-webfont-webfont.ttf') format('truetype');
+}
+
 body
 {
     direction:rtl;
@@ -195,7 +204,7 @@ margin-top:50px;
     background-image: url('../image/homepage/assent.svg');
     width: 120px;
     background-size: 120px 120px;
-    font-family: Nehama;
+    font-family: nehama-webfont;
     text-align: center;
     padding-top: 30px;
     font-size: 32pt;
@@ -242,7 +251,7 @@ margin-top:50px;
 
 .btncrusle {
     width: 250px;
-    font-family: Nehama;
+    font-family: nehama-webfont;
     text-align: center;
     font-size: 32pt;
     /*-webkit-text-fill-color: white;
@@ -373,7 +382,7 @@ article header p {
 }
 
 article h2 {
-    font-family: Nehama;
+    font-family: nehama-webfont;
     font-size: 32pt;
     line-height: 25pt;
     color: black;
@@ -528,7 +537,7 @@ article > h2 {
 .playstop{
     background-color: transparent;
     color: var(--sfont);
-    font-family: Nehama;
+    font-family: nehama-webfont;
     font-weight: bold;
     font-size: 18px;
     border-radius: 40px;
