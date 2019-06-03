@@ -1,26 +1,140 @@
 ﻿<!doctype html>
-<html lang="he">
+<html lang="">
 <head>
     <meta charset="utf-8" />
-
-    <title>Dor farjun</title>
+    <title></title>
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <meta name="author" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    
-    <!-- CSS -->
-    <!--<link href="styles/reset.css" rel="stylesheet" />-->
-    <link href="styles/myStyle.css" rel="stylesheet" />
 
+    <!-- CSS -->
+    <link href="bootstrap/css/bootstrap-reboot.css" rel="stylesheet" />
+    <link href="bootstrap/css/bootstrap-grid.css" rel="stylesheet" />
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Heebo:400,700|Varela+Round&display=swap&subset=hebrew" rel="stylesheet">
+    <link href='http://serve.fontsproject.com/css?family=Nehama:400'
+          rel='stylesheet' type='text/css'>
 
     <!-- Scripts -->
     <script src="jScripts/jquery-1.12.0.min.js"></script>
-    
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="jScripts/JavaScript.js"></script>
+
 </head>
 <body>
-    <div id="container">
-        <img id="mun" src="Munfash.gif" />
-</div>
-</body>
+    <!--<body onload="hideload();"> מסתיר אחרי שהעמוד נטען-->
+        
+    <div id="container" class="container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a id="logo" href="index.html"></a></li>
+                    <li tabindwx="0">
+                        ראש וגרון
+                        <ul>
+                            <li id="here"><a href="shiul.html">שיעול</a></li>
+                            <li><a href="#">צינון</a></li>
+                            <li><a href="#">כאב גרון</a></li>
+                            <li><a href="#">כאב ראש</a></li>
+                            <li><a href="#">כאב אוזניים</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        בטן גב
+                        <ul>
+                            <li><a href="stomach.html">כאב בטן</a></li>
+                            <li><a href="#">כאב גב</a></li>
+                            <li><a href="#">עצירות</a></li>
+                            <li><a href="#">שלשולים</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        ענייני בנות
+                        <ul>
+                            <li><a href="period.html">כאב מחזור</a></li>
+                            <li><a href="#">דלקת בשתן</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        עור ושרירים
+                        <ul>
+                            <li><a href="#">כאב שרירים</a></li>
+                            <li><a href="#">אלרגיות עור</a></li>
+                            <li><a href="#">פצעי עור</a></li>
+                            <li><a href="#">שריטות וחתכים</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        בעלי חיים
+                        <ul>
+                            <li><a href="dogs.html">פרעושים ופשפשים</a></li>
+                            <li><a href="#">ריח רע מהפה</a></li>
+                            <li><a href="#">נשירת פרווה</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        על סבתא
+                        <ul>
+                            <li><a href="#">מאחורי סבתא</a></li>
+                            <li><a href="#">דברו איתה</a></li>
+                            <li><a href="#">המפה של סבתא</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <input id="stopallbtn" class="playstop" onclick="stopall()" type="button" value="תעצרי תנועה" />
+            <input id="playallbtn" class="playstop" onclick="playall()" type="button" value="תעשי תנועה" />
+        </header>
+            <section id="opennigsec" class="sec300">
+                <h1 id="h1logo">
+                    סבתא<br />
+                    <span>תרופות מבית טוב</span>
+                </h1>
+                <DIV id="hazafot">
+                    <H2>
+                        סבתא אוהבת אותך הכי בעולם!
+                        איך היא יכולה לעזור?
+                    </H2>
+                    <a href="#" id="shiul" class="abtngif">שיעול</a>
+                    <a href="#" class="abtngif">כאב <BR />בטן</a>
+                    <a href="#" class="abtngif">כאב <BR /> מחזור</a>
+                </DIV>
+            </section>
+
+            <section class="sec300">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div id="bananasec" class="carousel-item active sec300">
+                            <div id="dotsban"><div id="banana"></div></div>
+                            <a class="btncrusle" id="btnbanana" href="#">קחי אותי לשם</a>
+                        </div>
+                        <div id="bikesec" class="carousel-item sec300">
+                            <a class="btncrusle" id="btnbike" href="#">ספרי לי עוד</a>
+                        </div>
+                        <div class="carousel-item sec300">
+                            <a class="btncrusle" id="" href="#">בואי נדבר</a>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </section>
+
+            <section class="sec300">
+            </section>
+        </div>
+    </body>
 </html>
