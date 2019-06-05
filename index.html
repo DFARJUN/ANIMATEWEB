@@ -30,10 +30,10 @@
 
     <div id="container" class="container">
         <header>
-            <nav>
+            <nav id="allnav">
                 <ul>
                     <li><a id="logo" href="index.html"></a></li>
-                    <li tabindwx="0">
+                    <li tabindex="0">
                         <a href="#">ראש וגרון</a>
                         <ul>
                             <li id="here"><a href="shiul.html">שיעול</a></li>
@@ -43,7 +43,7 @@
                             <li><a class="anotwork" href="#">כאב אוזניים</a></li>
                         </ul>
                     </li>
-                    <li>
+                    <li tabindex="0">
                         <a href="#">בטן גב</a> 
                         <ul>
                             <li><a href="stomach.html">כאב בטן</a></li>
@@ -52,14 +52,14 @@
                             <li><a class="anotwork" href="#">שלשולים</a></li>
                         </ul>
                     </li>
-                    <li>
+                    <li tabindex="0">
                         <a href="#">ענייני בנות</a>
                         <ul>
                             <li><a href="period.html">כאב מחזור</a></li>
                             <li><a class="anotwork" href="#">דלקת בשתן</a></li>
                         </ul>
                     </li>
-                    <li>
+                    <li tabindex="0">
                         <a href="#">עור ושרירים</a>      
                         <ul>
                             <li><a class="anotwork" href="#">כאב שרירים</a></li>
@@ -68,7 +68,7 @@
                             <li><a class="anotwork" href="#">שריטות וחתכים</a></li>
                         </ul>
                     </li>
-                    <li>
+                    <li tabindex="0">
                         <a href="#">בעלי חיים</a> 
                         <ul>
                             <li><a href="dogs.html">פרעושים ופשפשים</a></li>
@@ -76,18 +76,18 @@
                             <li><a class="anotwork" href="#">נשירת פרווה</a></li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="#">על סבתא</a> 
+                    <li tabindex="0">
+                        <a href="#">אודות סבתא</a> 
                         <ul>
-                            <li><a class="anotwork" href="#">מאחורי סבתא</a></li>
-                            <li><a class="anotwork" href="#">דברו איתה</a></li>
-                            <li><a class="anotwork" href="#">המפה של סבתא</a></li>
+                            <li><a class="anotwork" href="#">מאחורי האתר סבתא</a></li>
+                            <li><a class="anotwork" href="#">צרו קשר עם סבתא</a></li>
+                            <li><a class="anotwork" href="#">מפת האתר</a></li>
                         </ul>
                     </li>
                 </ul>
             </nav>
             <input id="stopallbtn" class="playstop" onclick="stopall()" type="button" value="תעצרי תנועה" />
-            <input id="playallbtn" class="playstop" onclick="playall()" type="button" value="תעשי תנועה" />
+            <input id="playallbtn" class="playstop" onclick="playall()" type="button" value="תמשיכי תנועה" />
         </header>
             <section id="opennigsec" class="sec300">
                 <h1 id="h1logo">
@@ -121,6 +121,14 @@
                             <a class="btncrusle" id="btnbike" href="undifined.html">ספרי לי עוד</a>
                         </div>
                         <div id="botsec" class="carousel-item sec300">
+                            <div id="botnosavta"></div>
+                            <div id="botsavta"></div>
+                            <div id="botnsbubble" >
+                                <p class="typewriter"><B>סבתא!</B> אני לא מרגישה <br /> טוב</p>
+                            </div>
+                            <div id="botsbubble">
+                                <p class="typewriter"><B>חיים של סבתא</B> אשמח <br /> לעזור</p>
+                            </div>
                             <a class="btncrusle" id="btnbot" href="#">בואי נדבר</a>
                         </div>
                     </div>
@@ -135,8 +143,68 @@
                 </div>
             </section>
 
-            <section class="sec300">
+            <section class="sec300" id="interactivesec">
             </section>
+            <footer>
+                <section>
+                    <h4>סבתא מזכירה לכם, היא רק סבתא, לא רופאה, שלא תאשימו אותה אחר כך.</h4>
+
+                </section>
+                <ul>
+                    <li tabindex="0">
+                        <a href="#">ראש וגרון</a>
+                        <ul>
+                            <li><a href="shiul.html" class="aiswork">שיעול</a></li>
+                            <li><a class="anotwork" href="#">צינון</a></li>
+                            <li><a class="anotwork" href="#">כאב גרון</a></li>
+                            <li><a class="anotwork" href="#">כאב ראש</a></li>
+                            <li><a class="anotwork" href="#">כאב אוזניים</a></li>
+                        </ul>
+                    </li>
+                    <li tabindex="0">
+                        <a href="#">בטן גב</a>
+                        <ul>
+                            <li><a class="aiswork" href="stomach.html">כאב בטן</a></li>
+                            <li><a class="anotwork" href="#">כאב גב</a></li>
+                            <li><a class="anotwork" href="#">עצירות</a></li>
+                            <li><a class="anotwork" href="#">שלשולים</a></li>
+                        </ul>
+                    </li>
+                    <li tabindex="0">
+                        <a href="#">ענייני בנות</a>
+                        <ul>
+                            <li><a class="aiswork" href="period.html">כאב מחזור</a></li>
+                            <li><a class="anotwork" href="#">דלקת בשתן</a></li>
+                        </ul>
+                    </li>
+                    <li tabindex="0">
+                        <a href="#">עור ושרירים</a>
+                        <ul>
+                            <li><a class="anotwork" href="#">כאב שרירים</a></li>
+                            <li><a class="anotwork" href="#">אלרגיות עור</a></li>
+                            <li><a class="anotwork" href="#">פצעי עור</a></li>
+                            <li><a class="anotwork" href="#">שריטות וחתכים</a></li>
+                        </ul>
+                    </li>
+                    <li tabindex="0">
+                        <a href="#">בעלי חיים</a>
+                        <ul>
+                            <li><a class="aiswork" href="dogs.html">פרעושים ופשפשים</a></li>
+                            <li><a class="anotwork" href="#">ריח רע מהפה</a></li>
+                            <li><a class="anotwork" href="#">נשירת פרווה</a></li>
+                        </ul>
+                    </li>
+                    <li tabindex="0">
+                        <a href="#">אודות סבתא</a>
+                        <ul>
+                            <li><a class="anotwork" href="#">מאחורי האתר סבתא</a></li>
+                            <li><a class="anotwork" href="#">צרו קשר עם סבתא</a></li>
+                            <li><a class="anotwork" href="#">מפת האתר</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div id="freepikdiv">סבתא נותנת מלא כבוד לאתר <a href="https://www.freepik.com/">freepik</a> שאחראי לחלק גדול מהתמונות באתר שלה</div>
+            </footer>
         </div>
     </body>
 </html>
