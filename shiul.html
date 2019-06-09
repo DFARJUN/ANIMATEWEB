@@ -21,6 +21,8 @@
     <script src="jScripts/jquery-1.12.0.min.js"></script>
     <script src="bootstrap/js/bootstrap.js"></script>
     <script src="jScripts/JavaScript.js"></script>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+
 
 </head>
 <body>
@@ -85,12 +87,15 @@
         </header>
         <article>
             <header>
-                <h1>שיעול</h1>
-                <p>
-                    החורף חזר ואיתו השיעולים ? SAVTA is coming! (באה בלי ספויילרים, אל תדאגו)
-                    סבתא כבר נחלמה בעבר עם שיעולים והיא מצאה לך את ה4 תרופות שהצליחו לגבור על כל שיעול שיש .
-                    ואפילו אם אתם לא בבית - סבתא תראה לך את הסוד שלה להתגבר על שיעול  דרך  מסאז מפנק (כן כן , מסאז).
-                </p>
+                <div class="headertxt" id="periodheadertxt">
+                    <h1>שיעול</h1>
+                    <p>
+                        החורף חזר ואיתו השיעולים? <br />
+                        <span id="gotfont"> !SAVTA is coming</span>   (באה בלי ספויילרים, אל תדאגו)   <BR />
+                        סבתא כבר נחלמה בעבר עם שיעולים והיא מצאה לך את ה4 תרופות שהצליחו לגבור על כל שיעול שיש. .
+                    </p>
+                </div>
+                <div id="shiulphoto" class="pagephoto"></div>
             </header>
             <section class="whitesec pot">
                 <div class="blueback">
@@ -160,7 +165,12 @@
                     </div>
                 </div>
             </section>
+            <h2 class="finishline">	סבתא מקווה שהפתרונות עזרו ולא תחזרו לכאן בקרוב שוב (אבל תבואו לקידוש בשישי, כן?)</h2>
         </article>
+        <footer w3-include-html="footer.html"></footer>
+        <script>
+            w3.includeHTML();
+        </script>
     </div>
 </body>
 </html>

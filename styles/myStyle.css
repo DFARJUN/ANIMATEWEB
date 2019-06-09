@@ -7,6 +7,11 @@
     src: url('../font/nehama-webfont.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'Game of Thrones';
+    src: url('../font/Game of Thrones.ttf') format('truetype');
+}
+
 body
 {
     direction:rtl;
@@ -87,6 +92,7 @@ color:var(--sfont);
     display:none;
     position:absolute;
     top:35px;
+
 }
 
 #container>header nav ul li a:hover{
@@ -114,24 +120,26 @@ text-decoration:none;
     margin-right:-10px;
 }
 
-    #container > header nav ul li:focus ul {
-        display: block;
-        width: 120px;
-        padding: 13px 0 0 0;
-        font-size: 10pt;
-        height: auto;
-        line-height: 35px;
-        list-style: none;
-        text-align: center;
-        background-color: var(--spink);
-        color: var(--sfont);
-        border-radius: 4px;
-        margin-right: -10px;
-    }
 
-#container>header nav ul li ul li:hover {
-        color: white;
-    }
+#allnav > ul > li > a:focus + #hghg, #allnav > ul > li:focus #hghg, #hghg:focus {
+    display: block;
+    width: 120px;
+    padding: 13px 0 0 0;
+    font-size: 10pt;
+    height: auto;
+    line-height: 35px;
+    list-style: none;
+    text-align: center;
+    background-color: var(--spink);
+    color: var(--sfont);
+    border-radius: 4px;
+    margin-right: -10px;
+}
+
+
+#container > header nav ul li ul li:hover {
+    color: white;
+}
 
 #container>header nav ul li ul li a {
         color: var(--sfont);
@@ -192,6 +200,10 @@ text-decoration:none;
     display: inline-block;
     position: absolute;
     top: 3px;
+}
+
+#logo:hover{
+    cursor:pointer !important;
 }
 
 #h1logo {
@@ -490,24 +502,66 @@ article h1 {
 }
 
 #dogphoto {
-    display: inline-block;
     background-image: url('../image/dogs/dog.svg');
+}
+
+.pagephoto{
+    display: inline-block;
     height: 274px;
     width: 230px;
     background-size: 230px 308px;
 }
 
-.headertxt {
-    display: inline-block;
-    width:600px;
-    margin-left:70px;
-    vertical-align:top;
-    padding-top:30px;
+#shiulphoto {
+    background-image: url('../image/shiul/Asset 1.svg');
+    background-size: 318px 277px;
+    position: relative;
+    left: 20px;
+    height: 258px;
+    width: 318px;
+    top: 16px;
 }
 
-article header{
-    height:274px;
+#preiodphoto {
+    background-image: url('../image/preiod/Asset 3.svg');
+    background-size: 318px 277px;
+    position: relative;
+    left: 20px;
+    height: 273px;
+    width: 318px;
+    top: 1px;
 }
+
+#stomachphoto {
+    background-image: url('../image/stomech/Asset 2.svg');
+    background-size: 318px 277px;
+    position: relative;
+    height: 273px;
+    width: 318px;
+    top: 1px;
+}
+
+.headertxt {
+    display: inline-block;
+    width: 600px;
+    margin-left: 70px;
+    vertical-align: top;
+    padding-top: 30px;
+}
+
+#periodheadertxt{
+    margin-left:18px;
+}
+
+#periodheadertxt>p {
+    width: 575px;
+}
+
+article header {
+    height: 274px;
+}
+
+
 
 .tip {
     display: inline-block;
@@ -538,7 +592,7 @@ article header{
     background-image: url('../image/tips/Asset 2.svg');
     height: 281px;
     position: relative;
-    padding: 57px 45px 63px 31px;
+    padding: 49px 49px 63px 31px;
     text-align: center;
     background-size: 280px 272px;
     bottom: 21px;
@@ -583,6 +637,26 @@ article header{
 
 article > h2 {
     margin-top: 30px;
+}
+
+.moreinf {
+    margin-top: 30px;
+}
+
+.moreinf p {
+font-size:18px;
+}
+
+.finishline{
+    text-align:center;
+    padding-top:20px;
+    padding-bottom:30px;
+    width:900px;
+    margin-top:0px;
+}
+
+.smallbs{
+    height:260px !important;
 }
 
 #stopallbtn {
@@ -870,3 +944,61 @@ padding-top: 7px;
     left: 24px;
     text-align: center;
 }
+
+#gotfont {
+    font-family: 'Game of Thrones';
+    font-size: 25px;
+    padding-left: 10px;
+}
+
+
+.acssesh {
+    text-indent: -10000px;
+    direction: ltr;
+    text-align: left;
+    display: block;
+    position: absolute;
+    overflow: hidden;
+}
+ul.skip {
+    position: absolute
+}
+
+ul.skip li {
+    position: absolute;
+    height: 1;
+}
+
+a.skip {
+    font-size: 1.4em;
+    height: 1px;
+    left: 0;
+    position: absolute;
+    top: -1000px;
+    width: 1px;
+    color: #fff;
+}
+
+    a.skip:focus, a.skip:active {
+        background-color: #f8f9fb;
+        color: #5c5c5c;
+        font-weight: bold;
+        height: auto;
+        font-size: 15px;
+        background-image: url('../img/logo.png');
+        background-position: 255px;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        font-size: 15px;
+        padding: 8px 25px 8px 15px;
+        position: absolute;
+        right: 0px;
+        text-align: center;
+        top: 55px;
+        border: 3px solid black;
+        width: 295px;
+        z-index: 90;
+        color: #000 !important;
+        outline: none;
+        border-radius: 60px;
+    }

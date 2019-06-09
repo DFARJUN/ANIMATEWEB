@@ -37,3 +37,5 @@ function playall() {
     document.getElementById("stopallbtn").style.display = "inline-block";
 
 }
+
+$("#newfooter").load("header.html"); 
