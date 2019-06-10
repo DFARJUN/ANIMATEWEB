@@ -43,21 +43,28 @@ body
 #container {
     width: var(--wwwind) !important;
     min-width: 1263px;
-    max-width: 100vw;
+    max-width: 1384px;
     padding: 0 0;
-    font-family:'Varela Round';
+    font-family: 'Varela Round';
     font-weight: normal;
     color: var(--sfont);
 }
 
-#container>header {
-    background-color: var(--spink);
-    height: 50px;
-    position: sticky;
-    top: 0;
-    width: var(--wwwind);
-    min-width:1263px;
-    z-index: 100;
+    #container > header {
+        background-color: var(--spink);
+        height: 50px;
+        position: sticky;
+        top: 0;
+        width: var(--wwwind);
+        min-width: 1263px;
+        max-width: 1384px;
+        z-index: 100;
+    }
+
+@media screen and (max-width: 500px) {
+    #container > header {
+        position: relative;
+    }
 }
 
     #container > header > nav {
@@ -119,9 +126,9 @@ text-decoration:none;
     border-radius:4px;
     margin-right:-10px;
 }
+    
 
-
-#allnav > ul > li > a:focus + #hghg, #allnav > ul > li:focus #hghg, #hghg:focus {
+#allnav > ul > li > a:focus + .submenu, #allnav > ul > li:focus .submen, .submen:focus {
     display: block;
     width: 120px;
     padding: 13px 0 0 0;
@@ -175,7 +182,8 @@ text-decoration:none;
     BORDER: 5PX SOLID BLACK;
     MARGIN: 0PX 10px 10px 10px;*/
     width: var(--wwwind);
-    min-Width:1263px;
+    min-Width: 1263px;
+    max-width: 1384px;
 }
 
 #bananasec {
@@ -382,20 +390,20 @@ margin-top:50px;
     }
 }
 
-.abtngif:hover {
+.abtngif:focus, .abtngif:hover {
     text-decoration: none;
-    mix-blend-mode:darken;
+    mix-blend-mode: darken;
 }
 
 #hazafot h2 {
     background-color: black;
     color: VAR(--sblue);
-    font-family:'Varela Round';
+    font-family: 'Varela Round';
     FONT-SIZE: 24PX;
-    WIDTH: 600PX;
+    WIDTH: 680PX;
+    text-align: center;
     FONT-WEIGHT: BOLD;
-    padding-right: 30PX;
-    margin-bottom:0;
+    margin-bottom: 0;
 }
 
 #shiul{
@@ -849,11 +857,14 @@ font-size:18px;
     background-image: url('../image/ICON/parasite (1).png');
 }
 
-#container>footer{
-    background-color:var(--sgreen);
-    padding-bottom:10px;
-    height:300px;
-    overflow:hidden;
+#container > footer {
+    background-color: var(--sgreen);
+    padding-bottom: 10px;
+    height: 300px;
+    overflow: hidden;
+    width: var(--wwwind);
+    min-Width: 1263px;
+    max-width: 1384px;
 }
 
 #container > footer h4{
@@ -927,8 +938,10 @@ padding-top: 7px;
     cursor:default !important;
 }
 
-#interactivesec{
-    background-color:var(--sblue);
+#interactivesec {
+    background: -moz-radial-gradient(center, ellipse cover, rgba(101,219,236,1) 1%, rgba(65,157,226,1) 99%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(101,219,236,1) 1%,rgba(65,157,226,1) 99%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, rgba(101,219,236,1) 1%,rgba(65,157,226,1) 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
 #freepikdiv {
