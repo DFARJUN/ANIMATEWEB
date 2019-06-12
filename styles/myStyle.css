@@ -19,7 +19,7 @@ body
 
 :root {
     --spink: #ff36a2;
-    --sblue: #65dbec;
+    --sblue: #3cc1f8;
     --spurple: #B30098;
     --syellow: #ffeb01;
     --sgreen: #4FC97C;
@@ -61,7 +61,7 @@ body
         z-index: 100;
     }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     #container > header {
         position: relative;
     }
@@ -217,25 +217,37 @@ text-decoration:none;
 #h1logo {
     font-weight: bold;
     color: black;
-    font-size: 138px;
-    height: 190px;
-    line-height: 45px;
-    margin-bottom: 43px;
-    padding-top: 80px;
-    margin-right: 90px;
-    text-shadow: 0px 0px 0 rgb(178,-1,151),1px -1px 0 rgb(178,-1,151),2px -2px 0 rgb(178,-1,151),3px -3px 0 rgb(178,-1,151),4px -4px 0 rgb(178,-1,151),5px -5px 0 rgb(178,-1,151),6px -6px 0 rgb(177,-2,150),7px -7px 0 rgb(177,-2,150),8px -8px 0 rgb(177,-2,150),9px -9px 0 rgb(177,-2,150),10px -10px 0 rgb(177,-2,150),11px -11px 0 rgb(177,-2,150),12px -12px 0 rgb(177,-2,150), 13px -13px 0 rgb(177,-2,150),14px -14px 0 rgb(177,-2,150),15px -15px 0 rgb(177,-2,150); 
-    -webkit-text-stroke-width: 2PX;
-    -webkit-text-stroke-color: black;
+    font-size: 90px;
+    height: 205px;
+    line-height: 29px;
+    margin-bottom: -13px;
+    padding-bottom: 173px;
+    padding-right: 92px;
+    padding-top: 121px;
+    margin-top: 11px;
+    margin-right: 89px;
+    background-size: 428px 293px;
+    width: 428px;
+    position: relative;
+    background-position-y: 1px;
+    bottom: 49px;
+    -webkit-transform: rotate(6deg);
+    -moz-transform: rotate(8deg);
+    background-image: url('../image/tips/Asset 3@2x.png');
 }
 
+    #h1logo > span {
+        -webkit-transform: rotate(3deg) !important;
+        -moz-transform: rotate(1deg);
+        display: inline-block;
+    }
 
-    #h1logo span {
-        font-size: 47px;
-        line-height: 22px;
+    #h1logo span span {
+        font-size: 30px;
+        line-height: 13px;
         margin-top: 0px;
         padding-right: 10px;
-        text-shadow: 0px 0px 0 rgb(178,-1,151),1px -1px 0 rgb(178,-1,151),2px -2px 0 rgb(178,-1,151),3px -3px 0 rgb(178,-1,151),4px -4px 0 rgb(178,-1,151),5px -5px 0 rgb(178,-1,151),6px -6px 0 rgb(177,-2,150),7px -7px 0 rgb(177,-2,150),8px -8px 0 rgb(177,-2,150),9px -9px 0 rgb(177,-2,150),10px -10px 0 rgb(177,-2,150);
-        -webkit-text-stroke-width: 1px;
+        font-weight: bold;
     }
 
 
@@ -250,7 +262,9 @@ text-decoration:none;
 }
 
 #hazafot{
-margin-top:50px;
+position:relative;
+bottom:51px;
+    
 }
 
 .abtngif {
@@ -355,12 +369,35 @@ margin-top:50px;
     animation-play-state: running;
 }
 
+.carousel-inner .carousel-item h3 {
+    font-size: 40px;
+    position: absolute;
+    top: 0px;
+    margin-right: 90px;
+    font-weight: bold;
+    color: white;
+    margin-top: 40px;
+    line-height: 50px;
+}
+
+#bananaspan {
+    color: yellow;
+    display: block;
+    font-size: 158px;
+    line-height: 140px;
+    margin-right: 61px;
+    text-shadow: 0 0 5px black,0 0 5px black,0 0 5px black,0 0 5px black,0 0 5px black,0 0 5px black,0 0 5px black,0 0 5px black, 3px -3px 0 var(--sblue),8px -8px 0 var(--sblue),13px -13px 0 var(--sblue);
+}
+
+#bah3span {
+    margin-right: 284px;
+}
+
 #botsec {
     background-color: var(--sgreen);
     overflow: hidden;
     background-image: url('../image/homepage/photpht.png');
     background-size: 100% auto;
-
 }
 
 #btnbot{
@@ -1014,4 +1051,33 @@ a.skip {
         color: #000 !important;
         outline: none;
         border-radius: 60px;
+    }
+
+#loadpage {
+    width: 100vw !important;
+    height: 100vh !important;
+    background-image: url(../image/homepage/Untitled-1.gif);
+    background-size: auto 70vh;
+    position: fixed;
+    background-repeat: no-repeat;
+    z-index: 500;
+    background-color: VAR(--sblue);
+    background-position: center;
+    background-position-y: 20VH;
+    text-align: center;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+    #loadpage h1 {
+        font-family: 'Varela Round';
+        -webkit-text-fill-color: white;
+        -webkit-text-stroke-width: 1PX;
+        -webkit-text-stroke-color: black;
+        padding-top: 29PX;
+        font-size: 53PX;
+        FONT-WEIGHT: BOLD;
     }
