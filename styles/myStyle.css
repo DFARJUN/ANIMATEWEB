@@ -31,6 +31,7 @@ body
     --sgreen-hover: #539764;
     --wwwind: 0px;
     --hwwind: 0px;
+    --zoomi:0px;
 }
 /*--sfont: #212728;*/
 /*--spink: #ff36a2;
@@ -48,6 +49,7 @@ body
     font-family: 'Varela Round';
     font-weight: normal;
     color: var(--sfont);
+    zoom: var(--zoomi);
 }
 
     #container > header {
@@ -198,6 +200,33 @@ text-decoration:none;
 
 #bikesec {
     background-color: var(--syellow);
+}
+
+#bike {
+    background-image: url('../image/homepage/bike.png');
+    background-size: 550px 387px;
+    animation: bike-dance 1s infinite;
+    width: 550px;
+    height: 387px;
+    float: left;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+    position: relative;
+    transform: rotate(22deg);
+}
+@keyframes bike-dance {
+    0% {
+top:20px;
+    }
+
+    50% {
+top:-50px;
+    }
+
+    100% {
+        top: 19px;
+        ;
+    }
 }
 
 #logo {
@@ -387,6 +416,24 @@ bottom:51px;
     line-height: 140px;
     margin-right: 61px;
     text-shadow: 0 0 5px black,0 0 5px black,0 0 5px black,0 0 5px black,0 0 5px black,0 0 5px black,0 0 5px black,0 0 5px black, 3px -3px 0 var(--sblue),8px -8px 0 var(--sblue),13px -13px 0 var(--sblue);
+}
+#bikespan {
+    color: var(--spurple);
+    display: block;
+    font-size: 78px;
+    margin-right: 61px;
+    text-shadow: 0 0 5px black,0 0 5px black,0 0 5px black,0 0 5px black,0 0 5px black,0 0 5px black,0 0 5px black,0 0 5px black, 3px -3px 0 var(--sblue),8px -8px 0 var(--sblue),13px -13px 0 var(--sblue);
+    line-height: 95px;
+}
+
+#bikesec h3 {
+    color: black;
+    font-size: 33px;
+}
+
+#bikesec #bah3span {
+    margin-right: 158px;
+    display: block;
 }
 
 #bah3span {
@@ -817,8 +864,9 @@ font-size:18px;
     border-right: .15em solid orange; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    animation: typing 3.5s steps(30, end),
-        blink-caret .75s step-end infinite
+    animation: typing 3.5s steps(30, end), blink-caret .75s step-end infinite; 
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
 }
 
 /* The typing effect */
@@ -1081,3 +1129,73 @@ a.skip {
         font-size: 53PX;
         FONT-WEIGHT: BOLD;
     }
+
+.arakbt {
+    position: absolute;
+    height: 300px;
+    width: auto;
+    opacity: 0;
+}
+
+#arak {
+    position: fixed;
+    right: 52px;
+}
+
+#arak1 {
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+}
+#arak2 {
+    -webkit-transform: rotate(-7deg);
+    -moz-transform: rotate(-8deg);
+}
+#arak3 {
+    -webkit-transform: rotate(-4deg);
+    -moz-transform: rotate(-4deg);
+}
+#arak4 {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+}
+#arak5 {
+    -webkit-transform: rotate(4deg);
+    -moz-transform: rotate(4deg);
+}
+#arak6 {
+    -webkit-transform: rotate(7deg);
+    -moz-transform: rotate(7deg);
+}
+#arak7 {
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+}
+#arak13 {
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+}
+
+#arak12 {
+    -webkit-transform: rotate(-7deg);
+    -moz-transform: rotate(-8deg);
+}
+
+#arak11 {
+    -webkit-transform: rotate(-4deg);
+    -moz-transform: rotate(-4deg);
+}
+
+#arak10 {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+}
+
+#arak9 {
+    -webkit-transform: rotate(4deg);
+    -moz-transform: rotate(4deg);
+}
+
+#arak8 {
+    -webkit-transform: rotate(7deg);
+    -moz-transform: rotate(7deg);
+}
