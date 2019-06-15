@@ -529,7 +529,7 @@ article {
     background: -webkit-linear-gradient(45deg, rgba(70,219,224,1) 0%,rgba(69,218,224,1) 1%,rgba(0,163,204,1) 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(45deg, rgba(70,219,224,1) 0%,rgba(69,218,224,1) 1%,rgba(0,163,204,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9946dbe0', endColorstr='#00a3cc',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-    padding: 10px 160px;
+    padding: 10px 177px 1px 0;
 }
 
 article header p {
@@ -559,11 +559,12 @@ article section p{
     width: 900px;
     background-color: white;
     padding: 01px 0px;
-    margin: 0px 0px 10px 0px;
+    margin: 0px 0px 30px 0px;
     background-size: 60px 60px;
     background-attachment: fixed;
     background-size: 40px 40px;
     background-position: center;
+    background-image:none !important;
 }
 
 .blueback {
@@ -1198,4 +1199,93 @@ a.skip {
 #arak8 {
     -webkit-transform: rotate(7deg);
     -moz-transform: rotate(7deg);
+}
+
+figure figcaption {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+}
+
+figure {
+    width: 400px;
+    display: inline-block;
+    margin: 40px 25px;
+}
+
+
+.bigfig {
+    width: 850px;
+}
+
+.stotafrit {
+    width: 900px;
+    padding-right: 0px;
+}
+
+    .stotafrit li {
+        width: 200px;
+        margin: 0 10.5px;
+        padding-top: 200px;
+        background-position: top;
+        background-repeat: no-repeat;
+        list-style: none;
+        display: inline-block;
+        text-align: center;
+        background-size: 200px 200px;
+    }
+
+.yeseat li:nth-child(1) {
+    background-image: url('../image/stomech/yesbanana@2x.png');
+}
+
+.yeseat li:nth-child(2) {
+    background-image: url('../image/stomech/yessumar@2x.png');
+}
+
+.yeseat li:nth-child(3) {
+    background-image: url('../image/stomech/yesapple@2x.png');
+}
+
+.yeseat li:nth-child(4) {
+    background-image: url('../image/stomech/yesrice@2x.png');
+}
+
+.noteat li:nth-child(1) {
+    background-image: url('../image/stomech/notoil@2x.png');
+}
+
+.noteat li:nth-child(2) {
+    background-image: url('../image/stomech/notorange@2x.png');
+}
+
+.noteat li:nth-child(3) {
+    background-image: url('../image/stomech/notmilk@2x.png');
+}
+
+.noteat li:nth-child(4) {
+    background-image: url('../image/stomech/notcoffee@2x.png');
+}
+
+.tafrith3 {
+    width: 900px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#seven210preiod {
+    background-image: url('../image/preiod/Artboard 1@2x.png');
+    background-size: 887px 115px;
+    padding-top: 10px;
+    background-position: bottom;
+    padding-bottom: 115px;
+    background-repeat: no-repeat;
+    background-color: white;
+    border-radius: 20px;
 }
