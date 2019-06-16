@@ -16,23 +16,23 @@
     <link href="https://fonts.googleapis.com/css?family=Heebo:400,700|Varela+Round&display=swap&subset=hebrew" rel="stylesheet">
     <link href='http://serve.fontsproject.com/css?family=Nehama:400'
           rel='stylesheet' type='text/css'>
-
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Scripts -->
     <script src="jScripts/jquery-1.12.0.min.js"></script>
     <script src="bootstrap/js/bootstrap.js"></script>
     <script src="jScripts/JavaScript.js"></script>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="jScripts/FORMJS.js"></script>
 
 </head>
-<body>
-    <!--<body onload="hideload();"> מסתיר אחרי שהעמוד נטען-->
-        
+<body onscroll="fundd()">
     <div id="container" class="container">
         <header>
             <nav>
                 <ul>
                     <li><a id="logo" href="index.html"></a></li>
-                    <li tabindwx="0">
+                    <li>
                         ראש וגרון
                         <ul>
                             <li id="here"><a href="shiul.html">שיעול</a></li>
@@ -85,22 +85,52 @@
                     </li>
                 </ul>
             </nav>
-            <input id="stopallbtn" class="playstop" onclick="stopall()" type="button" value="תעצרי תנועה" />
-            <input id="playallbtn" class="playstop" onclick="playall()" type="button" value="תעשי תנועה" />
         </header>
-            <section id="undifiendsec" class="sec300">
-                <h1 id="h1und">
-אויי! תפסת את סבתא בדיוק בזמן עבודה על דפים חדשים
-                </h1>
-                <DIV id="hazafot">
-                    <H2>
-עד שהיא תסיים, אתם יכולים לעבור למה שהיא כבר הכינה:)
-                    </H2>
-                    <a href="shiul.html" id="shiul" class="abtngif undgif">שיעול</a>
-                    <a href="stomach.html" class="abtngif undgif">כאב <BR />בטן</a>
-                    <a href="period.html" class="abtngif undgif">כאב <BR /> מחזור</a>
-                </DIV>
-            </section>     
-        </div>
-    </body>
+        <article>
+    <header>
+        <div class="headertxt">
+            <h1>צור קשר עם סבתא</h1>
+            <p>
+                בינינו, אתם יודעים שאין שום דבר שמשמח את סבתא יותר מאשר הודעה מהנכדים. כתבו
+                לה משהו:
+            </p>
+            </div>
+    </header>
+    <form>
+        <input type="hidden" id="myEmail" name="name" value="dfff.lahav@gmail.com">
+        <label for="FirstName">
+            <span class="labelNames">*שם מלא:</span>
+            <input required type="text" id="FirstName" placeholder="כי לפעמים היא שוכחת" />
+        </label>
+
+        <label for="EMail">
+            <span class="labelNames">*איימייל: </span>
+            <br />
+            <input type="email" id="EMail" placeholder="אפשר גם תא דואר" required />
+        </label>
+        <label for="myMS">
+            <span class="labelNames">*מה תרצו להגיד לסבתא? </span>
+            <textarea id="myMS" required></textarea>
+        </label>
+        <h2>אלו היו חובה. אבל <span class="stam">אלה לא</span></h2>
+        <label for="shtut">
+            <span class="labelNames stam">שורה אהובה בקידוש</span>
+            <input type="text" id="shtut" placeholder="אמן"/>
+        </label>
+        <label for="shtut2">
+            <span class="labelNames stam">אם היית סיפור לפני השנה, איזה היית?</span>
+            <input type="text" id="shtut2" />
+        </label>
+        <input type="submit" id="Sendbtn" value="שלחו לה!">
+        <div id="feedback"></div>
+
+    </form>
+        </article>
+        <footer w3-include-html="footer.html"></footer>
+        <script>
+            w3.includeHTML();
+        </script>
+    </div>
+</body>
 </html>
+
