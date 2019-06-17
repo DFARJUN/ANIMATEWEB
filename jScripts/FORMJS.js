@@ -1,6 +1,6 @@
 ﻿var myEmail = "";
 var successFeedback = "אין עלייך! חיים של סבתא. ההודעה נשלחה אליה :)";
-var failFeedback = "אוקי, לא להילחץ... אבל יש שגיאה. משהו הוקלד לא נכון. ננסה שוב?";
+var failFeedback = "אוקי, לא להילחץ... אבל יש שגיאה. משהו לא עובד. ננסה שוב?";
 var serverName = "";
 //serverName = "http://webdevelopmentcourse.telem-hit.net/"
 serverName = "https://webdevelopmentcourse.github.io/contactUs/WebDevelopmentCourse/";
@@ -9,18 +9,75 @@ var ajaxLoaderImageURL = serverName + "images/ajaxLoader.gif";
 
 
 
-$(function () {
-    myEmail = $("input#myEmail").val();
-    var theEmailString = "";
-    $("input[type='submit']").click(function () {
-        theEmailString = getFormValue();
-        send2Server(theEmailString);
-        return false;
-    });
+    $(function () {
+            myEmail = $("input#myEmail").val();
+            var theEmailString = "";
+            $("input[type='submit']").click(function () {
+                var eemail = document.getElementById("EMail").value;
+                var ttext = document.getElementById("myMS").value;
+                var nname = document.getElementById("FirstName").value;
+                if (eemail != "" && ttext != "" && nname != "") {
+                    document.getElementById("EMail").style.border = "none";
+                    document.getElementById("myMS").style.border = "none";
+                    document.getElementById("FirstName").style.border = "none";
+                    theEmailString = getFormValue();
+                    send2Server(theEmailString);
+                    return false;
+                    addAjaxLoaderToFeedbackDiv();
+                } else {
+                    document.getElementById("feedback").style.opacity = "1";
+                    document.getElementById("EMail").style.border = "none";
+                    document.getElementById("myMS").style.border = "none";
+                    document.getElementById("FirstName").style.border = "none";
 
-    // we set the ajaxLoaderImageFromTheStart
-    addAjaxLoaderToFeedbackDiv();
-});
+                    if (eemail == "" && ttext == "" && nname == "") {
+                        document.getElementById("EMail").style.border = "3px solid red";
+                        document.getElementById("myMS").style.border = "3px solid red";
+                        document.getElementById("FirstName").style.border = "3px solid red";
+                        document.getElementById("feedback").innerHTML = "יש כמה שדות שפספסת (שם,אימייל והודעה).<br/> לסבתא תמיד מספרים הכל!"
+                    } else {
+                        if (eemail == "" && ttext == "" && nname != "") {
+                            document.getElementById("EMail").style.border = "3px solid red";
+                            document.getElementById("myMS").style.border = "3px solid red";
+                            document.getElementById("feedback").innerHTML = "יש כמה שדות שפספסת (אימייל והודעה).<br/> לסבתא תמיד מספרים הכל!"
+                        } else {
+                            if (eemail != "" && ttext == "" && nname != "") {
+                                document.getElementById("myMS").style.border = "3px solid red";
+                                document.getElementById("feedback").innerHTML = "פספסת את כתיבת ההודעה.<br/> לא יפה ככה לא לכתוב לה כלום"
+                            } else {
+                                if (eemail != "" && ttext != "" && nname == "") {
+                                    document.getElementById("FirstName").style.border = "3px solid red";
+                                    document.getElementById("feedback").innerHTML = "לא כתבת שם.<br/> עם הגיל זה נהיה חשוב יותר ויותר"
+                                } else {
+                                    if (eemail == "" && ttext != "" && nname != "") {
+                                        document.getElementById("EMail").style.border = "3px solid red";
+                                        document.getElementById("feedback").innerHTML = "לא כתבת לסבתא מייל. כן, היא מבטיחה לא לשלוח ספאם."
+                                    } else {
+                                        if (eemail != "" && ttext == "" && nname == "") {
+                                            document.getElementById("FirstName").style.border = "3px solid red";
+                                            document.getElementById("myMS").style.border = "3px solid red";
+                                            document.getElementById("feedback").innerHTML = "יש כמה שדות שפספסת (שם והודעה).<br/> לסבתא תמיד מספרים הכל!"
+                                        } else {
+                                            if (eemail == "" && ttext != "" && nname == "") {
+                                                document.getElementById("FirstName").style.border = "3px solid red";
+                                                document.getElementById("EMail").style.border = "3px solid red";
+                                                document.getElementById("feedback").innerHTML = "יש כמה שדות שפספסת (שם ואימייל).<br/> לסבתא תמיד מספרים הכל!"
+                                            }
+                                        }
+
+                                    }
+
+                                }
+
+                            }
+                        }
+
+
+                    }
+                }
+            });
+
+        });
 
 
 function getFormValue() {

@@ -399,7 +399,7 @@ bottom:51px;
 }
 
 .carousel-inner .carousel-item h3 {
-    font-size: 40px;
+    font-size: 33px;
     position: absolute;
     top: 0px;
     margin-right: 90px;
@@ -412,8 +412,8 @@ bottom:51px;
 #bananaspan {
     color: yellow;
     display: block;
-    font-size: 158px;
-    line-height: 140px;
+    font-size: 78px;
+    line-height: 95px;
     margin-right: 61px;
     text-shadow: 0 0 5px black,0 0 5px black,0 0 5px black,0 0 5px black,0 0 5px black,0 0 5px black,0 0 5px black,0 0 5px black, 3px -3px 0 var(--sblue),8px -8px 0 var(--sblue),13px -13px 0 var(--sblue);
 }
@@ -437,7 +437,7 @@ bottom:51px;
 }
 
 #bah3span {
-    margin-right: 284px;
+    margin-right: 169px;
 }
 
 #botsec {
@@ -587,11 +587,11 @@ article section p{
 
 
 article h1 {
-    text-shadow: 0px 0px 0 rgb(178,-1,151),1px -1px 0 rgb(178,-1,151),2px -2px 0 rgb(178,-1,151),3px -3px 0 rgb(178,-1,151),4px -4px 0 rgb(178,-1,151),5px -5px 0 rgb(178,-1,151),6px -6px 0 rgb(177,-2,150),7px -7px 0 rgb(177,-2,150),8px -8px 0 rgb(177,-2,150),9px -9px 0 rgb(177,-2,150),10px -10px 0 rgb(177,-2,150);
-    color: black;
+    text-shadow: 0 0 7px black,0 0 7px black,0 0 7px black,0 0 7px black,0 0 7px black,0 0 7px black,0 0 7px black,0 0 7px black,0 0 7px black,0 0 7px black,0 0 7px black,0 0 7px black,0 0 7px black,0 0 7px black,0 0 7px black,0 0 7px black,0 0 7px black,0 0 7px black,0 0 7px black,0 0 7px black,0 0 7px black,0 0 7px black,0 0 7px black,0 0 7px black,0 0 7px black,0 0 7px black,0 0 7px black,0 0 7px black,0 0 7px black,0 0 7px black,0 0 7px black,0 0 7px black,0 0 7px black,0 0 7px black,0 0 7px black,0 0 7px black,0 0 7px black,0 0 7px black,0 0 7px black,0 0 7px black,0 0 7px black,0 0 7px black,0 0 7px black,0 0 7px black,0 0 7px black,0 0 7px black,0 0 7px black,0 0 7px black,0 0 7px black,0 0 7px black,10px 10px 0px black, 5px 5px black, 15px 15px black, 12px 12px black; 
     -webkit-text-stroke-width: 2PX;
-    -webkit-text-stroke-color: black;
-    font-size:80px;
+    -webkit-text-stroke-color: yellow;
+    font-size: 80px;
+    color:yellow;
 }
 
 #dogphoto {
@@ -955,7 +955,7 @@ font-size:18px;
 
 #container > footer h4{
 text-align:center;
-padding-bottom:20px;
+padding-bottom:0px;
 padding-top:20px;
 font-size:18px;
 }
@@ -1021,25 +1021,26 @@ padding-top: 7px;
 
 #container > footer a:hover{
     text-decoration:none;
-    cursor:default !important;
 }
 
 #interactivesec {
     background: -moz-radial-gradient(center, ellipse cover, rgba(101,219,236,1) 1%, rgba(65,157,226,1) 99%); /* FF3.6-15 */
     background: -webkit-radial-gradient(center, ellipse cover, rgba(101,219,236,1) 1%,rgba(65,157,226,1) 99%); /* Chrome10-25,Safari5.1-6 */
     background: radial-gradient(ellipse at center, rgba(101,219,236,1) 1%,rgba(65,157,226,1) 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+overflow:hidden;
 }
 
 #freepikdiv {
     background-image: url(../image/tips/freepik.svg);
     background-size: 347px 300px;
+    background-position-y: -58px;
     width: 347px;
-    height: 300px;
-    padding: 117px 43px 10px 50px;
+    height: 244px;
+    padding: 58px 43px 10px 50px;
     display: inline-block;
     vertical-align: top;
     position: relative;
-    bottom: 50px;
+    bottom: -11px;
     left: 24px;
     text-align: center;
 }
@@ -1393,6 +1394,7 @@ label{
 
 input, textarea {
     display: block;
+    width: 200px;
 }
 
 .labelNames{
@@ -1432,17 +1434,18 @@ form h2 {
     MARGIN-RIGHT: 10PX;
 }
 
-.stam{
-    color:var(--spurple-hover);
+.stam {
+    color: var(--spurple-hover);
 }
 
 #feedback {
     background-image: url('../image/tips/Asset 1s@2x.png');
     width: 228px;
-    padding: 17px 19px 25px 12px;
+    padding: 12px 12px 25px 12px;
+    line-height:19px;
     text-align: center;
     font-weight: bold;
-    color: black !important;
+    color: black;
     height: 131px;
     position: relative;
     bottom: 152px;
@@ -1450,4 +1453,127 @@ form h2 {
     background-size: 229px 131px;
     transform: rotate(-15deg);
     opacity: 0;
+}
+
+#cupoftea {
+    background-image: url('../image/homepage/kisspng-green-tea-coffee-iced-tea-lemon-tea-png-transparent-image-5a78f0e6efdf76.7803481515178754309825.png');
+    background-size: 450px 361px;
+    width: 450px;
+    height: 361px;
+    position: relative;
+    bottom: 258px;
+    left: 33px;
+    float: left;
+    opacity: 0.8;
+}
+
+#teaspan {
+    color: black;
+    display: block;
+    font-size: 78px;
+    margin-right: 61px;
+    text-shadow:3px -3px 0 var(--syellow),8px -8px 0 var(--syellow);
+    line-height: 95px;
+}
+
+#interactivesec h3 {
+    color: black;
+    font-size: 33px;
+    font-weight: bold;
+    margin-right: 94px;
+    margin-top: 59px;
+}
+
+#tea3span{
+    margin-right:100px;
+    display:block;
+}
+#interactivesec .btncrusle {
+    position: relative;
+    top: 47px;
+    background-color: var(--syellow);
+}
+
+.footerbtn {
+    background-color: var(--sgreen);
+    border: 1px solid black;
+    border-radius: 33px;
+    width: 200px;
+    display: inline-block;
+    height: 35px;
+    text-align: center;
+    color: black;
+    line-height: 35px;
+    font-weight: bold;
+    margin: 0 183px 10px;
+}
+
+.footerbtn:hover, .footerbtn:focus{
+    background-color:var(--sgreen-hover);
+    color:black;
+    text-decoration:none;
+    cursor:pointer !important;
+}
+
+.longht{
+    width:900px !important;
+    height:200px;
+}
+
+.longhh{
+    height:200px !important;
+}
+
+h2.tafrith3{
+    font-family:'Varela Round';
+    -webkit-text-stroke:unset;
+    -webkit-text-fill-color:black;
+    margin-top:45px;
+}
+#courses {
+padding:0;
+width:900px;
+}
+    #courses li {
+        width: 200px;
+        margin: 10.5px;
+        display: inline-block;
+        padding-top: 200px;
+        text-align: center;
+        height: 220px;
+        list-style: none;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: 200px 200px;
+        font-size: 20px;
+    }
+
+    #courses li:nth-child(1) {
+        background-image: url('../image/about/code@2x.png');
+    }
+    #courses li:nth-child(2) {
+        background-image: url('../image/about/ux@2x.png');
+    }
+    #courses li:nth-child(3) {
+        background-image: url('../image/about/ui@2x.png');
+    }
+    #courses li:nth-child(4) {
+        background-image: url('../image/about/accws@2x.png');
+    }
+
+.abouthef{
+    display:inline-block;
+    width:450px;
+}
+
+.abouthef img{
+    width:400px;
+    height:400px;
+    margin:0 25px;
+}
+
+.abouthef h2{
+    text-align:center;
+    display:inline-block;
+    width:450px;
 }
