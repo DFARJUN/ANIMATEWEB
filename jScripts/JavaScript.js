@@ -33,6 +33,7 @@ function stopall() {
     document.getElementsByClassName("typewriter")[0].style.WebkitAnimationPlayState = "paused";
     document.getElementsByClassName("typewriter")[1].style.WebkitAnimationPlayState = "paused";
     document.getElementById("banana").style.WebkitAnimationPlayState = "paused";
+    document.getElementById("circlespoon").style.WebkitAnimationPlayState = "paused";
     $("#carouselExampleIndicators").carousel('pause');
     document.getElementById("stopallbtn").style.display = "none";
     document.getElementById("playallbtn").style.display = "inline-block";
@@ -47,7 +48,7 @@ function playall() {
     document.getElementsByClassName("abtngif")[2].style.WebkitAnimationPlayState = "running";
     document.getElementsByClassName("typewriter")[0].style.WebkitAnimationPlayState = "running";
     document.getElementsByClassName("typewriter")[1].style.WebkitAnimationPlayState = "running";
-
+    document.getElementById("circlespoon").style.WebkitAnimationPlayState = "running";
     document.getElementById("banana").style.WebkitAnimationPlayState = "running";
     $("#carouselExampleIndicators").carousel('cycle');
     document.getElementById("playallbtn").style.display = "none";

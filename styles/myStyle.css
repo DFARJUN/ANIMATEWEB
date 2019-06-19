@@ -145,6 +145,11 @@ text-decoration:none;
     margin-right: -10px;
 }
 
+#here {
+    font-weight: bold;
+    color: #000B6B !important;
+}
+
 
 #container > header nav ul li ul li:hover {
     color: white;
@@ -210,6 +215,7 @@ text-decoration:none;
     height: 387px;
     float: left;
     -webkit-animation-play-state: running;
+    animation-timing-function: cubic-bezier(0, 0, 1, 0.99);
     animation-play-state: running;
     position: relative;
     transform: rotate(22deg);
@@ -239,9 +245,10 @@ top:-50px;
     top: 3px;
 }
 
-#logo:hover{
-    cursor:pointer !important;
-}
+    #logo:hover {
+        cursor: pointer !important;
+        background-image: url('../image/logoh.png');
+    }
 
 #h1logo {
     font-weight: bold;
@@ -314,6 +321,7 @@ bottom:51px;
     FLOAT: RIGHT;
     MARGIN-RIGHT: 90PX;
     animation: shadow-pulse 0.8s infinite;
+    animation-timing-function: cubic-bezier(0, 0, 1, 0.99);
     z-index: 2;
     -webkit-animation-play-state: running;
     animation-play-state: running;
@@ -391,6 +399,7 @@ bottom:51px;
     background-image: url('../image/homepage/banana.svg');
     background-size: 450px 450px;
     animation: banana-dance 1.5s infinite;
+    animation-timing-function: cubic-bezier(0, 0, 1, 0.99);
     width: 450px;
     height: 450px;
     float: left;
@@ -779,6 +788,7 @@ font-size:18px;
 
 .playstop:hover {
     background-color: var(--spink-hover);
+    cursor:pointer;
 }
 
 #undifiendsec {
@@ -1456,7 +1466,7 @@ form h2 {
 }
 
 #cupoftea {
-    background-image: url('../image/homepage/kisspng-green-tea-coffee-iced-tea-lemon-tea-png-transparent-image-5a78f0e6efdf76.7803481515178754309825.png');
+    background-image: url('../image/homepage/kisspng2-green-tea-coffee-iced-tea-lemon-tea-png-transparent-image-5a78f0e6efdf76.7803481515178754309825.png');
     background-size: 450px 361px;
     width: 450px;
     height: 361px;
@@ -1465,6 +1475,7 @@ form h2 {
     left: 33px;
     float: left;
     opacity: 0.8;
+    z-index:20;
 }
 
 #teaspan {
@@ -1490,7 +1501,7 @@ form h2 {
 }
 #interactivesec .btncrusle {
     position: relative;
-    top: 47px;
+    top: -150px;
     background-color: var(--syellow);
 }
 
@@ -1585,7 +1596,6 @@ iframe {
 }
 
 #interactivebtn {
-    background-color: var(--sblue);
     border: 1px solid black;
     border-radius: 33px;
     width: 200px;
@@ -1600,4 +1610,35 @@ iframe {
 
 #interactivebtn:hover{
     background-color:var(--sblue-hover);
+    text-decoration:none;
+}
+
+#circlespoon {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    right: 808px;
+    bottom: 253px;
+    animation: spoon-dance 4s infinite;
+    animation-timing-function: cubic-bezier(0, 0, 1, 1);
+    background-image: url(../image/homepage/lemon.png);
+    background-size: 200px 200px;
+    z-index: 1;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+}
+
+
+@keyframes spoon-dance {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(359deg);
+    }
 }
