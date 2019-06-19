@@ -305,9 +305,10 @@ bottom:51px;
 
 .abtngif {
     height: 120px;
-    background-image: url('../image/homepage/assent.svg');
+    background-image: url('../image/homepage/assent.png');
     width: 120px;
-    background-size: 120px 120px;
+    background-size: 240px 120px;
+    background-position:left;
     font-family: nehama;
     text-align: center;
     padding-top: 33px;
@@ -326,6 +327,12 @@ bottom:51px;
     -webkit-animation-play-state: running;
     animation-play-state: running;
 }
+
+    .abtngif:focus, .abtngif:hover {
+        text-decoration: none;
+background-position:right
+
+    }
 
 @keyframes shadow-pulse {
     0% {
@@ -483,10 +490,7 @@ bottom:51px;
     }
 }
 
-.abtngif:focus, .abtngif:hover {
-    text-decoration: none;
-    mix-blend-mode: darken;
-}
+
 
 #hazafot h2 {
     background-color: black;
