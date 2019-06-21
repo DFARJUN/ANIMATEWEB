@@ -2,13 +2,12 @@
 <html lang="">
 <head>
     <meta charset="utf-8" />
-    <title>סבתא-תרופות מבית טוב</title>
-    <meta name="description" content="תרופות בקטע טוב" />
+    <title>סבתאבוט-סבתא</title>
+    <meta name="description" content="תשאלו את סבתא - סבתא תרופות מבית טוב" />
     <meta name="keywords" content="תרופות סבתא, סבתא, חולי, תרופות, מחלה, בית מרקחת, קופת חולים, רופא, אחות, תרופה, מחלה," />
     <meta name="author" content="רותם כרמי, רביד הלר ודור פרג'ון" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <link rel="icon" href="image/favicon.png" type="image/gif" sizes="16x16">
-
 
 
     <!-- CSS -->
@@ -26,10 +25,11 @@
     <script src="bootstrap/js/bootstrap.js"></script>
     <script src="jScripts/JavaScript.js"></script>
     <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="jScripts/botjava.js"></script>
 
 </head>
-<body onload="hideload()">
-    <!--<div id="loadpage"><h1>סבתא בפינישים אחרונים</h1></div>-->
+<body>
+    <!--<body onload="hideload();"> מסתיר אחרי שהעמוד נטען-->
     <h5 class="acssesh">תפריט נגישות</h5>
     <ul class="skip" aria-label="תפריט נגישות">
         <li><a accesskey="h" href="#intro" class="skip">דלג לתוכן העמוד (מקש קיצור h)</a></li>
@@ -39,8 +39,6 @@
         <li><a accesskey="4" href="About.html" class="skip">עבור לאודות <span>(מקש קיצור 4)</span></a></li>
         <li><a accesskey="s" href="#stopallbtn" class="skip">עצירת תנועה <span>(מקש קיצור s)</span></a></li>
     </ul>
-
-
     <div id="container" class="container">
         <header>
             <nav id="allnav" aria-label="תפריט ראשי באתר">
@@ -99,72 +97,32 @@
                     </li>
                 </ul>
             </nav>
-            <input id="stopallbtn" class="playstop" onclick="stopall()" type="button" value="תעצרי תנועה" />
-            <input id="playallbtn" class="playstop" onclick="playall()" type="button" value="תמשיכי תנועה" />
         </header>
-        <section id="opennigsec" class="sec300">
-            <h1 id="h1logo" id="intro">
-                <span>
-                    סבתא<br />
-                    <span>תרופות מבית טוב</span>
-                </span>
+        <section id="allbotpage">
+            <h1 id="h1und" id="intro">
+                סבתא תמיד שם בשבילך, תשאלו אותה :)
             </h1>
-            <DIV id="hazafot">
-                <H2>
-                    סבתא אוהבת אותך הכי בעולם!
-                    איך היא יכולה לעזור?
-                </H2>
-                <a href="shiul.html" id="shiul" class="abtngif">שיעול</a>
-                <a href="stomach.html" class="abtngif">כאב <br />בטן</a>
-                <a href="period.html" class="abtngif">כאב <br />מחזור</a>
-            </DIV>
-        </section>
 
-        <section class="sec300">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div id="bananasec" class="carousel-item active sec300">
-                        <h3>ידעתם ש <span id="bananaspan">בננה</span> <span id="bah3span">גורמת לעצירות?</span></h3>
-                        <div id="dotsban"><div id="banana"></div></div>
-                        <a class="btncrusle" id="btnbanana" href="undifined.html">קחי אותי לשם</a>
-                    </div>
-                    <div id="bikesec" class="carousel-item sec300">
-                        <h3>אולי <span id="bikespan">לסבתא אין גלגלים</span> <span id="bah3span">אבל יש לה אחלה פתרונות אם במקרה  <br />החלקת מהאופניים</span></h3>
-                        <div id="bike"></div>
-                        <a class="btncrusle" id="btnbike" href="undifined.html">ספרי לי עוד</a>
-                    </div>
-                    <div id="botsec" class="carousel-item sec300">
-                        <div id="botnosavta"></div>
-                        <div id="botsavta"></div>
-                        <div id="botnsbubble">
-                            <p class="typewriter"><B>סבתא!</B> אני לא מרגישה <br /> טוב</p>
-                        </div>
-                        <div id="botsbubble">
-                            <p class="typewriter"><B>חיים של סבתא</B> אשמח <br /> לעזור</p>
-                        </div>
-                        <a class="btncrusle" id="btnbot" href="bot.html">בואי נדבר</a>
+            <section id="botpage">
+
+                <div id="mebot">
+                    <div>
+                        <textarea id="botquet" rows="2" cols="20"></textarea>
+                        <input id="botbut" onclick="botfunc()" type="button" value="button" />
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </section>
 
-        <section class="sec300" id="interactivesec">
-            <h3>שוב פעם <span id="teaspan">תה עם נענע?</span> <span id="tea3span">במטבח של סבתא תמצאו עוד הרבה <br />פתרונות, קצת יותר מקוריים</span></h3>
-            <div id="cupoftea"></div> <DIV id="circlespoon"></DIV>
-            <a class="btncrusle" id="btnbanana" href="interactive.html">יאללה למטבח</a>
+                <div id="answerbot">
+                    <div>
+                        <div>
+                            <div id="theanswer"></div>
+                            <a id="bottopage" target="_blank" href="stomach.html"><i class="fas fa-chevron-left"></i> עמוד כאבי בטן</a>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
         </section>
         <footer w3-include-html="footer.html"></footer>
         <script>
