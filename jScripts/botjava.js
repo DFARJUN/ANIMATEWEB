@@ -105,7 +105,7 @@ function botfunc() {
 var varundifined = "לא הצלחתי להבין, בואו ננסה שוב";
 var varhead = "הראש הראש הראש";
 var varback = "הגב הגב הגבה";
-var varbeten = "בטן בטן בטן";
+var varbeten = " בטן בטן בטן בטן בטן בטן בטן בטן בטן בטן בטן בטן בטן בטן בטן בטן בטן בטןבטן בטן בטן בטן בטן בטן בטן בטן בטן בטן בטן בטן ";
 var vargaron = "גרון גרון גרון";
 var varazirut = "עצירות עצירות עצירות";
 var varozen = "אוזן אוזן";

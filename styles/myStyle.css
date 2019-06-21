@@ -63,7 +63,7 @@ body {
         z-index: 100;
     }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     #container > header {
         position: relative;
     }
@@ -2074,10 +2074,11 @@ transform: rotate(-2deg);
 
 #theanswer {
     padding: 24px;
+    height: 68px;
 }
 
 #bottopage {
-    position: absolute;
+    position: relative;
     margin-right: 35px;
     border-radius: 14px;
     transform: rotate(2deg);
@@ -2090,10 +2091,10 @@ transform: rotate(-2deg);
     width: 130px;
     height: 26px;
     text-align: center;
-    display:none;
+    display: none;
     line-height: 26px;
     color: white;
     text-decoration: none;
-    top: 188px;
-    left: 135px;
+    top: -5px;
+    left: -2px;
 }
