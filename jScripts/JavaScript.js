@@ -5,7 +5,7 @@ document.documentElement.style.setProperty('--wwwind', wwind-17 + "px");
 
 if (window.innerWidth > 1384 && window.innerWidth < 2500) {
     document.documentElement.style.setProperty('--wwwind', 1287 + "px");
-    var zoomn = window.innerWidth / 1300;
+    var zoomn = window.innerWidth / 1302;
     document.documentElement.style.setProperty('--zoomi', zoomn );
 }
 
