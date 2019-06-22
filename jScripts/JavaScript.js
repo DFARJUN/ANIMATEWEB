@@ -1,4 +1,7 @@
-﻿var hwind = window.innerHeight;
+﻿console.log("%cוואוו! סבתא מתה על סקרנים. מקווה שתאהבו את מה שתראו כאן... זה לא פחות חשוב :)", "background-color: #3cc1f8; color: #black; font-weight:bold; font-size:25px");
+
+
+var hwind = window.innerHeight;
 var wwind = window.innerWidth;
 document.documentElement.style.setProperty('--hwwind', hwind + "px");
 document.documentElement.style.setProperty('--wwwind', wwind-17 + "px");
@@ -161,3 +164,5 @@ function fundd() {
                 }
             }
         }
+
+
