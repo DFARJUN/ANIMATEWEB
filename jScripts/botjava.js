@@ -1,5 +1,28 @@
-﻿
+﻿var randomnum = Math.floor(Math.random() * 2)
+setTimeout(function () {
+    document.getElementById("theanswer").innerHTML = "סבתא מקלידה.";
+}, 600);
+setTimeout(function () {
+    document.getElementById("theanswer").innerHTML = "סבתא מקלידה..";
+}, 900);
+setTimeout(function () {
+    document.getElementById("theanswer").innerHTML = "סבתא מקלידה...";
+}, 1200);
+setTimeout(function () {
+    document.getElementById("theanswer").innerHTML = "סבתא מקלידה.";
+}, 1500);
+setTimeout(function () {
+    if (randomnum == 0) {
+        document.getElementById("theanswer").innerHTML = "היי חיים של סבתא, איך אפשר לעזור?";
+    } else {
+        document.getElementById("theanswer").innerHTML = "נשמה של סבתא! מה כואב לך?";
+    }
+}, 1800);
+
+
+
 function botfunc() {
+    var randomnum = Math.floor(Math.random() * 2)
     var btnn = document.getElementById("bottopage");
     btnn.style.display = "";
     var quation = document.getElementById("botquet").value;
@@ -25,10 +48,16 @@ function botfunc() {
                 document.getElementById("theanswer").innerHTML = varhead;
             } else {
                 if ((quation.includes("בטן")) || (quation.includes("הבטן")) || (quation.includes("בבטן")) || (quation.includes("קיבה"))) {
-                    document.getElementById("theanswer").innerHTML = varbeten;
                     btnn.style.display = "block";
                     document.getElementById("bottopage").innerHTML = "לעמוד כאב בטן";
                     btnn.href = "stomach.html";
+                    if (randomnum == 0) {
+                        document.getElementById("theanswer").innerHTML = varbeten;
+
+                    } else {
+                        document.getElementById("theanswer").innerHTML = varbeten2;
+
+                    }
                 } else {
                     if ((quation.includes("גב")) || (quation.includes("בגב")) || (quation.includes("הגב"))) {
                         document.getElementById("theanswer").innerHTML = varback;
@@ -65,8 +94,14 @@ function botfunc() {
                                                     btnn.href = "shiul.html";
 
                                                 } else {
+
+                                                    if (randomnum == 0) {
                                                         document.getElementById("theanswer").innerHTML = varundifined;
-                                                    }
+
+                                                    } else {
+                                                        document.getElementById("theanswer").innerHTML = varundifined2;
+
+                                                    }                                                    }
                                                 
                                             }
                                         }
@@ -94,7 +129,13 @@ function botfunc() {
             document.getElementById("theanswer").innerHTML = "סבתא מקלידה..";
         }, 300);
         setTimeout(function () {
-            document.getElementById("theanswer").innerHTML = "מבובלים, שכחתם לשאול שאלה";
+            if (randomnum == 0) {
+                document.getElementById("theanswer").innerHTML = "מבובלים, שכחתם לשאול שאלה";
+
+            } else {
+                document.getElementById("theanswer").innerHTML = "אוי ווי! יכול להיות שלא הקלדתם כלום?";
+
+            }
         }, 600);
     }
 }
@@ -103,9 +144,11 @@ function botfunc() {
 
 
 var varundifined = "לא הצלחתי להבין, בואו ננסה שוב";
+var varundifined2 = "קצת הסבכתי לקרוא את מה שכתבת,בואו ננסה שוב ";
 var varhead = "הראש הראש הראש";
 var varback = "הגב הגב הגבה";
 var varbeten = " בטן בטן בטן בטן בטן בטן בטן בטן בטן בטן בטן בטן בטן בטן בטן בטן בטן בטןבטן בטן בטן בטן בטן בטן בטן בטן בטן בטן בטן בטן ";
+var varbeten2 = " בטן בטן בטן בטן בטן בטן בטן בטן בטן בטן בטן בטן בטן בטן 2בטן בטן ב2טן בטןב2טן בט2ן בטן בטן ב2טן ב2טן בטן22 בטן בטן בט2ן2 בטן2 בטן ";
 var vargaron = "גרון גרון גרון";
 var varazirut = "עצירות עצירות עצירות";
 var varozen = "אוזן אוזן";
