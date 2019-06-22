@@ -41,6 +41,14 @@ body {
 --sgreen: #64ca89;*/
 
 
+::selection {
+    background-color: rgba(255,54,162,0.99);
+    color: black;
+    -webkit-text-stroke: unset;
+    -webkit-text-fill-color: black;
+    text-shadow: none;
+}
+
 #container {
     width: var(--wwwind) !important;
     min-width: 1263px;
