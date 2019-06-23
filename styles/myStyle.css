@@ -44,7 +44,7 @@ body {
 ::selection {
     background-color: rgba(255,54,162,0.99);
     color: black;
-    -webkit-text-stroke: unset;
+    -webkit-text-stroke: orchid;
     -webkit-text-fill-color: black;
     text-shadow: none;
 }
@@ -370,7 +370,8 @@ top:-50px;
         margin-top: 0px;
         padding-right: 10px;
         font-weight: bold;
-    }
+    display:inline-block;
+        }
 
 
 
@@ -888,7 +889,8 @@ font-size:18px;
     background-position: bottom right;
     background-color: var(--sblue);
     background-size: 100% auto;
-    height: calc(var(--hwwind) - 50px);
+    height: 450px;
+    overflow: hidden;
 }
 
 #h1und{
@@ -907,14 +909,24 @@ font-size:18px;
     margin-right:0px;
 }
 
+#undifiendsec #hazafot{
+    bottom:0px;
+top:50px;
+}
+
+#undifiendsec #hazafot .abtngif {
+    bottom: 0px;
+    top: 50px;
+}
+
 #botnosavta {
     background-image: url('../image/homepage/bot.png');
-    height:300px;
-    width:280px;
-    background-size:280px 300px;
-    position:absolute;
-    bottom:0px;
-    right:100px;
+    height: 300px;
+    width: 280px;
+    background-size: 280px 300px;
+    position: absolute;
+    bottom: 0px;
+    right: 100px;
 }
 
 #botsavta {
@@ -2105,4 +2117,13 @@ transform: rotate(-2deg);
     text-decoration: none;
     top: -5px;
     left: -2px;
+}
+
+#interactivesec .btncrusle:hover, #interactivesec .btncrusle:focus{
+    background-color:var(--syellow-hover);
+}
+
+#Sendbtn:hover,#Sendbtn:focus{
+    background-color:var(--spink-hover);
+    cursor:pointer;
 }

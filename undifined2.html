@@ -1,9 +1,19 @@
 ﻿<!doctype html>
 <html lang="">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142563224-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-142563224-1');
+    </script>
+
     <meta charset="utf-8" />
-    <title>סבתאבוט-סבתא</title>
-    <meta name="description" content="תשאלו את סבתא - סבתא תרופות מבית טוב" />
+    <title>העמוד בפיתוח-סבתא</title>
+    <meta name="description" content="עמוד בפיתוח - סבתא תרופות מבית טוב" />
     <meta name="keywords" content="תרופות סבתא, סבתא, חולי, תרופות, מחלה, בית מרקחת, קופת חולים, רופא, אחות, תרופה, מחלה," />
     <meta name="author" content="רותם כרמי, רביד הלר ודור פרג'ון" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
@@ -24,8 +34,6 @@
     <script src="jScripts/jquery-1.12.0.min.js"></script>
     <script src="bootstrap/js/bootstrap.js"></script>
     <script src="jScripts/JavaScript.js"></script>
-    <script src="https://www.w3schools.com/lib/w3.js"></script>
-    <script src="jScripts/botjava.js"></script>
 
 </head>
 <body>
@@ -97,12 +105,13 @@
                     </li>
                 </ul>
             </nav>
+            <input id="stopallbtn" class="playstop" onclick="stopall()" type="button" value="תעצרי תנועה" />
+            <input id="playallbtn" class="playstop" onclick="playall()" type="button" value="תמשיכי תנועה" />
         </header>
-        <section id="undifiendsec">
+        <section id="undifiendsec" class="sec300" >
             <h1 id="h1und" id="intro">
                 אויי! תפסת את סבתא בדיוק בזמן עבודה על דפים חדשים
             </h1>
-
             <DIV id="hazafot">
                 <H2>
                     עד שהיא תסיים, אתם יכולים לעבור למה שהיא כבר הכינה:)
@@ -112,10 +121,6 @@
                 <a href="period.html" class="abtngif undgif">כאב <BR /> מחזור</a>
             </DIV>
         </section>
-        <footer w3-include-html="footer.html"></footer>
-        <script>
-            w3.includeHTML();
-        </script>
     </div>
 </body>
 </html>
