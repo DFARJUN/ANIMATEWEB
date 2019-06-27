@@ -914,10 +914,12 @@ font-size:18px;
 top:50px;
 }
 
-#undifiendsec #hazafot .abtngif {
-    bottom: 0px;
-    top: 50px;
-}
+    #undifiendsec #hazafot .abtngif {
+        bottom: 0px;
+        top: 33px;
+        position: relative;
+        left: 500px;
+    }
 
 #botnosavta {
     background-image: url('../image/homepage/bot.png');
@@ -2095,6 +2097,7 @@ transform: rotate(-2deg);
 #theanswer {
     padding: 24px;
     height: 68px;
+    font-size:13px;
 }
 
 #bottopage {
@@ -2115,13 +2118,17 @@ transform: rotate(-2deg);
     line-height: 26px;
     color: white;
     text-decoration: none;
-    top: -5px;
+    top: 1px;
     left: -2px;
 }
 
-#interactivesec .btncrusle:hover, #interactivesec .btncrusle:focus{
-    background-color:var(--syellow-hover);
-}
+    #bottopage:hover, #bottopage:focus{
+        background-color:var(--spurple-hover);
+    }
+
+    #interactivesec .btncrusle:hover, #interactivesec .btncrusle:focus {
+        background-color: var(--syellow-hover);
+    }
 
 #Sendbtn:hover,#Sendbtn:focus{
     background-color:var(--spink-hover);

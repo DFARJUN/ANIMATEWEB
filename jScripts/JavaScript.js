@@ -14,6 +14,7 @@ if (window.innerWidth > 1384 && window.innerWidth < 2500) {
 
 
 
+
 window.onresize = function () {
     var hwind = window.innerHeight;
     var wwind = window.innerWidth;
@@ -63,23 +64,23 @@ function playall() {
 
 $("#newfooter").load("header.html"); 
 
-function fadd() {
-    document.getElementById('arak1').style.opacity = "0";
-    document.getElementById('arak2').style.opacity = "0";
-    document.getElementById('arak3').style.opacity = "0";
-    document.getElementById('arak4').style.opacity = "0";
-    document.getElementById('arak5').style.opacity = "0";
-    document.getElementById('arak6').style.opacity = "0";
-    document.getElementById('arak7').style.opacity = "0";
-    document.getElementById('arak8').style.opacity = "0";
-    document.getElementById('arak9').style.opacity = "0";
-    document.getElementById('arak10').style.opacity = "0";
-    document.getElementById('arak11').style.opacity = "0";
-    document.getElementById('arak12').style.opacity = "0";
-    document.getElementById('arak13').style.opacity = "0";
+//function fadd() {
+//    document.getElementById('arak1').style.opacity = "0";
+//    document.getElementById('arak2').style.opacity = "0";
+//    document.getElementById('arak3').style.opacity = "0";
+//    document.getElementById('arak4').style.opacity = "0";
+//    document.getElementById('arak5').style.opacity = "0";
+//    document.getElementById('arak6').style.opacity = "0";
+//    document.getElementById('arak7').style.opacity = "0";
+//    document.getElementById('arak8').style.opacity = "0";
+//    document.getElementById('arak9').style.opacity = "0";
+//    document.getElementById('arak10').style.opacity = "0";
+//    document.getElementById('arak11').style.opacity = "0";
+//    document.getElementById('arak12').style.opacity = "0";
+//    document.getElementById('arak13').style.opacity = "0";
 
 
-}
+//}
 
 function fundd() {
     var ScrollyTop = window.scrollY

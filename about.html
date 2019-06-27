@@ -23,11 +23,11 @@
     <script src="jScripts/jquery-1.12.0.min.js"></script>
     <script src="bootstrap/js/bootstrap.js"></script>
     <script src="jScripts/JavaScript.js"></script>
-    <script src="https://www.w3schools.com/lib/w3.js"></script>
+
 
 
 </head>
-<body onscroll="fundd()">
+<body >
     <h5 class="acssesh">תפריט נגישות</h5>
     <ul class="skip" aria-label="תפריט נגישות">
         <li><a accesskey="h" href="#intro" class="skip">דלג לתוכן העמוד (מקש קיצור h)</a></li>
@@ -40,11 +40,11 @@
     <div id="container" class="container">
         <header>
             <nav id="allnav" aria-label="תפריט ראשי באתר">
-                <ul id="nav_inner" class="nav__list">
+                <ul id="nav_inner" class="nav__list" aria-label="תפריט ראשי באתר">
                     <li><a id="logo" href="index.html" aria-label="לוגו עמוד הבית"></a></li>
                     <li class="has-drop">
-                        <a href="#">ראש וגרון</a>
-                        <ul class="submenu nav__list__drop">
+                        <a aria-label="תפריט אב" href="#">ראש וגרון</a>
+                        <ul class="submenu nav__list__drop" aria-label="תת תפריט">
                             <li><a href="shiul.html">שיעול</a></li>
                             <li><a class="anotwork" aria-label="קישור לא פעיל" href="#">צינון</a></li>
                             <li><a class="anotwork" aria-label="קישור לא פעיל" href="#">כאב גרון</a></li>
@@ -53,8 +53,8 @@
                         </ul>
                     </li>
                     <li class="has-drop">
-                        <a href="#">בטן גב</a>
-                        <ul class="submenu nav__list__drop">
+                        <a aria-label="תפריט אב" href="#">בטן גב</a>
+                        <ul class="submenu nav__list__drop" aria-label="תת תפריט">
                             <li><a href="stomach.html">כאב בטן</a></li>
                             <li><a class="anotwork" aria-label="קישור לא פעיל" href="#">כאב גב</a></li>
                             <li><a class="anotwork" aria-label="קישור לא פעיל" href="#">עצירות</a></li>
@@ -62,15 +62,15 @@
                         </ul>
                     </li>
                     <li class="has-drop">
-                        <a href="#">ענייני בנות</a>
-                        <ul class="submenu nav__list__drop">
+                        <a aria-label="תפריט אב" href="#">ענייני בנות</a>
+                        <ul class="submenu nav__list__drop" aria-label="תת תפריט">
                             <li><a href="period.html">כאב מחזור</a></li>
                             <li><a class="anotwork" aria-label="קישור לא פעיל" href="#">דלקת בשתן</a></li>
                         </ul>
                     </li>
                     <li class="has-drop">
-                        <a href="#">עור ושרירים</a>
-                        <ul class="submenu nav__list__drop">
+                        <a aria-label="תפריט אב" href="#">עור ושרירים</a>
+                        <ul class="submenu nav__list__drop" aria-label="תת תפריט">
                             <li><a class="anotwork" aria-label="קישור לא פעיל" href="#">כאב שרירים</a></li>
                             <li><a class="anotwork" aria-label="קישור לא פעיל" href="#">אלרגיות עור</a></li>
                             <li><a class="anotwork" aria-label="קישור לא פעיל" href="#">פצעי עור</a></li>
@@ -78,16 +78,16 @@
                         </ul>
                     </li>
                     <li class="has-drop">
-                        <a href="#">בעלי חיים</a>
-                        <ul class="submenu nav__list__drop">
+                        <a aria-label="תפריט אב" href="#">בעלי חיים</a>
+                        <ul class="submenu nav__list__drop" aria-label="תת תפריט">
                             <li><a href="dogs.html">פרעושים ופשפשים</a></li>
                             <li><a class="anotwork" aria-label="קישור לא פעיל" href="#">ריח רע מהפה</a></li>
                             <li><a class="anotwork" aria-label="קישור לא פעיל" href="#">נשירת פרווה</a></li>
                         </ul>
                     </li>
                     <li class="has-drop">
-                        <a href="#">אודות סבתא</a>
-                        <ul class="submenu nav__list__drop">
+                        <a aria-label="תפריט אב" href="#">אודות סבתא</a>
+                        <ul class="submenu nav__list__drop" aria-label="תת תפריט">
                             <li><a href="about.html">מאחורי האתר סבתא</a></li>
                             <li><a href="contact.html">צרו קשר עם סבתא</a></li>
                             <li><a href="sitemap.html">מפת האתר</a></li>
@@ -216,10 +216,67 @@
 
 
         </article>
-        <footer w3-include-html="footer.html"></footer>
-        <script>
-            w3.includeHTML();
-        </script>
+        <footer role="סיומת העמוד">
+            <section>
+                <h4>סבתא מזכירה לכם, היא רק סבתא, לא רופאה. שלא תאשימו אותה אחר כך.</h4>
+                <a class="footerbtn" href="interactive.html">ייצוג אינטראקטיבי</a>    <a class="footerbtn" href="bot.html">סבתאבוט</a>
+
+            </section>
+            <ul>
+                <li>
+                    <a href="#">ראש וגרון</a>
+                    <ul>
+                        <li><a href="shiul.html" class="aiswork">שיעול</a></li>
+                        <li><a class="anotwork" aria-label="קישור לא פעיל" aria-label="קישור לא פעיל" href="#">צינון</a></li>
+                        <li><a class="anotwork" aria-label="קישור לא פעיל" href="#">כאב גרון</a></li>
+                        <li><a class="anotwork" aria-label="קישור לא פעיל" href="#">כאב ראש</a></li>
+                        <li><a class="anotwork" aria-label="קישור לא פעיל" href="#">כאב אוזניים</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">בטן גב</a>
+                    <ul>
+                        <li><a class="aiswork" href="stomach.html">כאב בטן</a></li>
+                        <li><a class="anotwork" aria-label="קישור לא פעיל" href="#">כאב גב</a></li>
+                        <li><a class="anotwork" aria-label="קישור לא פעיל" href="#">עצירות</a></li>
+                        <li><a class="anotwork" aria-label="קישור לא פעיל" href="#">שלשולים</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">ענייני בנות</a>
+                    <ul>
+                        <li><a class="aiswork" href="period.html">כאב מחזור</a></li>
+                        <li><a class="anotwork" aria-label="קישור לא פעיל" href="#">דלקת בשתן</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">עור ושרירים</a>
+                    <ul>
+                        <li><a class="anotwork" aria-label="קישור לא פעיל" href="#">כאב שרירים</a></li>
+                        <li><a class="anotwork" aria-label="קישור לא פעיל" href="#">אלרגיות עור</a></li>
+                        <li><a class="anotwork" aria-label="קישור לא פעיל" href="#">פצעי עור</a></li>
+                        <li><a class="anotwork" aria-label="קישור לא פעיל" href="#">שריטות וחתכים</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">בעלי חיים</a>
+                    <ul>
+                        <li><a class="aiswork" href="dogs.html">פרעושים ופשפשים</a></li>
+                        <li><a class="anotwork" aria-label="קישור לא פעיל" href="#">ריח רע מהפה</a></li>
+                        <li><a class="anotwork" aria-label="קישור לא פעיל" href="#">נשירת פרווה</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">אודות סבתא</a>
+                    <ul>
+                        <li><a class="aiswork" href="about.html">מאחורי האתר סבתא</a></li>
+                        <li><a class="aiswork" href="contact.html">צרו קשר עם סבתא</a></li>
+                        <li><a class="aiswork" href="#">מפת האתר</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div id="freepikdiv">סבתא נותנת מלא כבוד לאתר <a target="_blank" href="https://www.freepik.com/">freepik</a> שאחראי לחלק גדול מהתמונות באתר שלה</div>
+        </footer>
     </div>
 </body>
 </html>
