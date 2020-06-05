@@ -70,3 +70,8 @@
 $(document).ready(function () {
     new WOW().init();
 });
+
+
+function myresize() {
+
+}

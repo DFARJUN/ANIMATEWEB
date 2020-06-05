@@ -161,12 +161,15 @@ sup {
 }
 
 a {
-  color: #1abc9c;
-  text-decoration: none;
-  background-color: transparent;
+    color: var(--secondary);
+    text-decoration: none;
+    background-color: transparent;
+    float: right;
+    direction: rtl;
+    font-weight: bold;
 }
 a:hover {
-  color: #117964;
+  color: var(--gray-dark);
   text-decoration: underline;
 }
 
@@ -382,6 +385,7 @@ h3, .h3 {
 
 h4, .h4 {
   font-size: 1.5rem;
+  margin: 2rem 0;
 }
 
 h5, .h5 {
@@ -595,8 +599,8 @@ pre code {
 }
 @media (min-width: 1200px) {
     .container-xl, .container-lg, .container-md, .container-sm, .container {
-        max-width: 1400px;
-        width: 90%;
+        max-width: unset;
+        width: 80%;
     }
 }
 .row {
@@ -2467,6 +2471,7 @@ textarea.form-control {
 }
 .btn:not(:disabled):not(.disabled) {
   cursor: pointer;
+
 }
 a.btn.disabled,
 fieldset:disabled a.btn {
@@ -4003,7 +4008,8 @@ input[type=button].btn-block {
   display: inline-block;
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
-  margin-right: 1rem;
+  margin-right: 0;
+  margin-left:1rem;
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap;
@@ -4114,8 +4120,13 @@ input[type=button].btn-block {
     padding-right: 0;
     padding-left: 0;
   }
+
+
+
+
+
 }
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
   .navbar-expand-md {
     flex-flow: row nowrap;
     justify-content: flex-start;
@@ -4156,8 +4167,8 @@ input[type=button].btn-block {
     padding-right: 0;
     padding-left: 0;
   }
-}
-@media (min-width: 992px) {
+}*/
+@media (min-width: 767px) {
   .navbar-expand-lg {
     flex-flow: row nowrap;
     justify-content: flex-start;
@@ -4180,6 +4191,19 @@ input[type=button].btn-block {
 .navbar-expand-lg > .container-xl {
     flex-wrap: nowrap;
   }
+
+    #mainNav .container {
+        margin: unset;
+        padding: 0.5rem 0;
+    }   
+    #mainNav {
+        padding: 0 !important;
+    }
+
+    #navbarResponsive ul.navbar-nav {
+        margin: 0;
+    }
+
   .navbar-expand-lg .navbar-collapse {
     display: flex !important;
     flex-basis: auto;
@@ -6109,7 +6133,7 @@ button.bg-primary:focus {
 }
 
 .bg-secondary {
-    background-color: var(--gray-dark) !important;
+    background-color: var(--primary) !important;
 }
 
 a.bg-secondary:hover, a.bg-secondary:focus,
@@ -8796,7 +8820,7 @@ button.bg-dark:focus {
     margin-left: auto !important;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 767px) {
   .m-lg-0 {
     margin: 0 !important;
   }
@@ -10089,18 +10113,19 @@ h3 {
 #mainNav .navbar-nav {
   margin-top: 1rem;
 }
-#mainNav .navbar-nav li.nav-item a.nav-link {
-  color: #fff;
-}
+    #mainNav .navbar-nav li.nav-item a.nav-link {
+        color: var(--gray-dark);
+    }
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
-    color: var(--primary);
+    color:white;
 
 }
 #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
   color: #fff;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link.active {
-  color: #1abc9c;
+  color: white;
+  text-decoration:underline;
 }
 #mainNav .navbar-toggler {
   font-size: 80%;
@@ -10121,8 +10146,7 @@ h3 {
     margin-top: 0;
   }
     #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
-        color: var(--secondary);
-        
+        color: white;
     }
   /*#mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
     color: #fff;
@@ -10271,3 +10295,4 @@ p{
     text-align:right;
     margin-bottom:2rem;
 }
+
